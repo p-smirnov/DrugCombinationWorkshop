@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pharmacogenomic Analysis of Drug Combination Experiments to Identify Biomarkers of Response or Resistance • pgxBioc2022Workshop</title>
+<title>Pharmacogenomic Analysis of Drug Combination Experiments to Identify Biomarkers of Response or Resistance • pgxDrugCombinationWorkshop</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Pharmacogenomic Analysis of Drug Combination Experiments to Identify Biomarkers of Response or Resistance">
-<meta property="og:description" content="pgxBioc2022Workshop">
+<meta property="og:description" content="pgxDrugCombinationWorkshop">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -32,8 +32,8 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">pgxBioc2022Workshop</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0.9</span>
+        <a class="navbar-link" href="../index.html">pgxDrugCombinationWorkshop</a>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0.10</span>
       </span>
     </div>
 
@@ -77,17 +77,17 @@
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Pharmacogenomic Analysis of Drug Combination
 Experiments to Identify Biomarkers of Response or Resistance</h1>
-                        <h4 data-toc-skip class="author">Christopher
+                        <h4 data-toc-skip class="author">Petr
+Smirnov</h4>
+            <address class="author_afil">
+      European Molecular Biology
+Laboratory<br><a class="author_email" href="mailto:#"></a><a href="mailto:petr.smirnov@embl.de" class="email">petr.smirnov@embl.de</a>
+      </address>
+                              <h4 data-toc-skip class="author">Christopher
 Eeles</h4>
             <address class="author_afil">
       Princess Margaret Cancer
 Centre<br><a class="author_email" href="mailto:#"></a><a href="mailto:christopher.eeles@uhnresearch.ca" class="email">christopher.eeles@uhnresearch.ca</a>
-      </address>
-                              <h4 data-toc-skip class="author">Petr
-Smirnov</h4>
-            <address class="author_afil">
-      Princess Margaret Cancer CentreUniversity of
-Toronto<br><a class="author_email" href="mailto:#"></a><a href="mailto:petr.smirnov@utoronto.ca" class="email">petr.smirnov@utoronto.ca</a>
       </address>
                               <h4 data-toc-skip class="author">Feifei
 Li</h4>
@@ -104,6 +104,7 @@ Toronto<br><a class="author_email" href="mailto:#"></a><a href="mailto:ff.li@mai
 
     
     
+<!-- todo: add attribution for the core BioC figures -->
 <!-- Remove {-} from header to show numbering -->
 <div class="section level2">
 <h2 class="unnumbered" id="workshop-overview">Workshop Overview<a class="anchor" aria-label="anchor" href="#workshop-overview"></a>
@@ -113,9 +114,12 @@ Toronto<br><a class="author_email" href="mailto:#"></a><a href="mailto:ff.li@mai
 information<a class="anchor" aria-label="anchor" href="#instructors-names-and-contact-information"></a>
 </h3>
 <ul>
-<li>Christopher Eeles <a href="mailto:christopher.eeles@uhnresearch.ca" class="email">christopher.eeles@uhnresearch.ca</a>
+<li>Petr Smirnov <a href="mailto:petr.smirnov@embl.de" class="email">petr.smirnov@embl.de</a>
 </li>
-<li>Petr Smirnov <a href="mailto:petr.smirnov@utoronto.ca" class="email">petr.smirnov@utoronto.ca</a>
+</ul>
+<p>Co-Authors of Workshop Materials and Packages:</p>
+<ul>
+<li>Christopher Eeles <a href="mailto:christopher.eeles@uhnresearch.ca" class="email">christopher.eeles@uhnresearch.ca</a>
 </li>
 <li>Benjamin Haibe-Kains <a href="mailto:benjamin.haibe.kains@utoronto.ca" class="email">benjamin.haibe.kains@utoronto.ca</a>
 </li>
@@ -125,34 +129,33 @@ information<a class="anchor" aria-label="anchor" href="#instructors-names-and-co
 <h3 class="unnumbered" id="workshop-description">Workshop Description<a class="anchor" aria-label="anchor" href="#workshop-description"></a>
 </h3>
 <!-- Alias package links -->
-<p>This workshop will introduce users to the <em><a href="https://bioconductor.org/packages/3.16/CoreGx" class="external-link">CoreGx</a></em> and
-<em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
+<p>This workshop will introduce users to the <em><a href="https://bioconductor.org/packages/3.18/CoreGx" class="external-link">CoreGx</a></em> and
+<em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
 R packages, which are useful tools for pharmacogenomic modelling to
 discover biomarkers of treatment response in cancer model systems.
-<em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
+<em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
 specifically focuses on drug sensitivity experiments in cancer cell
 lines, which will be the major focus of this workshop. Additional
-infrastructure from our lab includes <em><a href="https://bioconductor.org/packages/3.16/ToxicoGx" class="external-link">ToxicoGx</a></em>
-for toxicogenomics in healthy human cell-lines, <em><a href="https://bioconductor.org/packages/3.16/RadioGx" class="external-link">RadioGx</a></em>
-for radiogenomics in cancer cell-lines and <em><a href="https://bioconductor.org/packages/3.16/Xeva" class="external-link">Xeva</a></em> for
+infrastructure available in this suite of packages includes <em><a href="https://bioconductor.org/packages/3.18/ToxicoGx" class="external-link">ToxicoGx</a></em>
+for toxicogenomics in healthy human cell-lines, <em><a href="https://bioconductor.org/packages/3.18/RadioGx" class="external-link">RadioGx</a></em>
+for radiogenomics in cancer cell-lines and <em><a href="https://bioconductor.org/packages/3.18/Xeva" class="external-link">Xeva</a></em> for
 pharmacogenomics in patient derived xenograph (PDX) murine models.</p>
-<p>Participants will learn the fundamentals of using <em><a href="https://bioconductor.org/packages/3.16/CoreGx" class="external-link">CoreGx</a></em> and
-<em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
+<p>Participants will learn the fundamentals of using <em><a href="https://bioconductor.org/packages/3.18/CoreGx" class="external-link">CoreGx</a></em> and
+<em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
 to create a <code>PharmacoSet</code>—an integrative container for the
 storage, analysis and visualization of pharmacogenomic experiments.
-Particular focus will be placed on newly developed support for storing,
-analyzing and visualizing drug combination sensitivity experiments and
-correlating results therefrom with multi-omic molecular profiles to
-discover biomarkers of drug sensitivity, resistance, synergy, or
-antagonism.</p>
+Particular focus will be placed on storing, analyzing and visualizing
+drug combination sensitivity experiments and correlating results
+therefrom with multi-omic molecular profiles to discover biomarkers of
+drug sensitivity, resistance, synergy, or antagonism.</p>
 <div class="section level4">
 <h4 class="unnumbered" id="pre-requisites">Pre-requisites<a class="anchor" aria-label="anchor" href="#pre-requisites"></a>
 </h4>
 <ul>
 <li>Basic knowledge of R syntax</li>
 <li>Knowledge of or interest in pharmacogenomics</li>
-<li>Familiarity with core Bioconductor classes such as the and <em><a href="https://bioconductor.org/packages/3.16/SummarizedExperiment" class="external-link">SummarizedExperiment</a></em>
-and <em><a href="https://bioconductor.org/packages/3.16/MultiAssayExperiment" class="external-link">MultiAssayExperiment</a></em>
+<li>Familiarity with core Bioconductor classes such as the and <em><a href="https://bioconductor.org/packages/3.18/SummarizedExperiment" class="external-link">SummarizedExperiment</a></em>
+and <em><a href="https://bioconductor.org/packages/3.18/MultiAssayExperiment" class="external-link">MultiAssayExperiment</a></em>
 </li>
 <li>Curiosity about or experience with <em><a href="https://CRAN.R-project.org/package=data.table" class="external-link">data.table</a></em>
 an asset!</li>
@@ -190,8 +193,8 @@ used<a class="anchor" aria-label="anchor" href="#r-bioconductor-packages-used"><
 </h4>
 <p>Bioconductor:</p>
 <ul>
-<li><em><a href="https://bioconductor.org/packages/3.16/CoreGx" class="external-link">CoreGx</a></em></li>
-<li><em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em></li>
+<li><em><a href="https://bioconductor.org/packages/3.18/CoreGx" class="external-link">CoreGx</a></em></li>
+<li><em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em></li>
 </ul>
 <p>CRAN:</p>
 <ul>
@@ -203,7 +206,7 @@ used<a class="anchor" aria-label="anchor" href="#r-bioconductor-packages-used"><
 <div class="section level3">
 <h3 class="unnumbered" id="time-outline">Time outline<a class="anchor" aria-label="anchor" href="#time-outline"></a>
 </h3>
-<p>For a 1.5-hr workshop:</p>
+<p>For a 3-hr workshop:</p>
 <table class="table">
 <thead><tr class="header">
 <th>Activity</th>
@@ -211,12 +214,37 @@ used<a class="anchor" aria-label="anchor" href="#r-bioconductor-packages-used"><
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td>Introduction to CoreGx and PharmacoGx</td>
+<td>Introduction to the workshop and learning goals</td>
 <td>5m</td>
 </tr>
 <tr class="even">
-<td>Overview of Data Structures</td>
-<td>15m</td>
+<td>Overview of Drug Combination Experiments</td>
+<td>10m</td>
+</tr>
+<tr class="odd">
+<td>Introduction to Bioconductor Project</td>
+<td>5m</td>
+</tr>
+<tr class="even">
+<td>Overview of Bioconductor Data Structures</td>
+<td>10m</td>
+</tr>
+<tr class="odd">
+<td>Hands on with a <code>MultiAssayExperiment</code>
+</td>
+<td>5m</td>
+</tr>
+<tr class="even">
+<td>Introduction to CoreGx and PharmacoGx</td>
+<td>5m</td>
+</tr>
+<tr class="odd">
+<td>Introduction to the <code>CoreGx</code> data structures</td>
+<td>10m</td>
+</tr>
+<tr class="even">
+<td>————————————————————</td>
+<td>——</td>
 </tr>
 <tr class="odd">
 <td>How the <code>TRE</code> Supports Drug Combinations Data
@@ -226,7 +254,16 @@ Analysis</td>
 <tr class="even">
 <td>Using a <code>DataMapper</code> to build a Drug Combo
 PharmacoSet</td>
-<td>10m</td>
+<td>20m</td>
+</tr>
+<tr class="odd">
+<td>Computing with a <code>TRE</code>
+</td>
+<td>15m</td>
+</tr>
+<tr class="even">
+<td>————————————————————</td>
+<td>——</td>
 </tr>
 <tr class="odd">
 <td>Dose Response Models and Drug Sensitivity measures</td>
@@ -234,15 +271,19 @@ PharmacoSet</td>
 </tr>
 <tr class="even">
 <td>Drug Combination Synergy Models</td>
-<td>15m</td>
+<td>25m</td>
 </tr>
 <tr class="odd">
 <td>Biomarker Discovery</td>
-<td>10m</td>
+<td>15m</td>
 </tr>
 <tr class="even">
 <td>Further Resources</td>
 <td>5m</td>
+</tr>
+<tr class="odd">
+<td>————————————————————</td>
+<td>——</td>
 </tr>
 </tbody>
 </table>
@@ -270,8 +311,8 @@ sensitivity screens</li>
 <h4 class="unnumbered" id="learning-objectives">Learning objectives<a class="anchor" aria-label="anchor" href="#learning-objectives"></a>
 </h4>
 <ul>
-<li>Describe use cases for <em><a href="https://bioconductor.org/packages/3.16/CoreGx" class="external-link">CoreGx</a></em> and
-<em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
+<li>Describe use cases for <em><a href="https://bioconductor.org/packages/3.18/CoreGx" class="external-link">CoreGx</a></em> and
+<em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
 in pharmacogenomics and beyond</li>
 <li>Understand the structure of the <code>CoreSet</code> and
 <code>PharmacoSet</code> classes to facilitate their use in subsequent
@@ -293,7 +334,7 @@ compound treatments in cell-lines</li>
 <li>Calculate the AAC, AUC, and IC50 metrics for response quantification
 in cell lines</li>
 <li>Compute and store various metrics of drug synergy and antagonism
-using <em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
+using <em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
 and the <code>TreatmentResponseExperiment</code>
 </li>
 <li>Learn how to use <code>PharmacoGx</code> to discover univariate
@@ -304,27 +345,157 @@ biomarkers of drug response, resistance, synergy, or antagnoism</li>
 </div>
 </div>
 <div class="section level2">
+<h2 id="introduction-to-the-bioconductor-project">Introduction to the Bioconductor Project<a class="anchor" aria-label="anchor" href="#introduction-to-the-bioconductor-project"></a>
+</h2>
+<p>Bioconductor is an open source, community driven software project and
+which provides a set of data structures and tools for the analysis of
+biological data in R. The project started circa 2002 and has grown to
+include 2230+ software packages, both developed by the core Bioconductor
+team (a minority), as well as many external contributors. In general,
+these packages include Software (Tools and Algorithms for analysis or
+visualization), Annotation Data packages, Experimental Data packages,
+and Workflows giving examples of particular analysis tasks. Inclusion of
+a package in Bioconductor requires it to conform to a set of standards
+regarding code quality, documentation, and interoperability with other
+packages in the ecosystem, the passing of an extended series of
+automated checks, as well as a review by a member of the core team.</p>
+<p>As mentioned above, one of the major goals of the Bioconductor
+project is to provide an interoperable set of data structures in which
+to store biological data, which should accelerate the ability of users
+to apply novel methods and packages to their data. As any open source
+project, this interoperability is not universal, but most Bioconductor
+pacakges will either use standard Bioconductor data types, or provide
+methods to convert to and from them. This means that learning the core
+Bioconductor classes, and the common abstractions between them opens up
+100s of packages for use in your analysis.</p>
+<p>For the purposes of this workshop, we will focus on data structures
+that are used to store molecular readouts from human samples, and an
+extention of these data structures to store complex phenotypic
+measurements, including drug combination screens, conducted on the same
+model systems.</p>
+</div>
+<div class="section level2">
+<h2 id="core-bioconductor-data-structures">Core Bioconductor Data Structures<a class="anchor" aria-label="anchor" href="#core-bioconductor-data-structures"></a>
+</h2>
+<div class="section level3">
+<h3 id="summarizedexperiment-and-multiassayexperiment">
+<code>SummarizedExperiment</code> and
+<code>MultiAssayExperiment</code><a class="anchor" aria-label="anchor" href="#summarizedexperiment-and-multiassayexperiment"></a>
+</h3>
+<p>The <code>SummarizedExperiment</code> (<code>SE</code>) is one of the
+basic data containers in the Bioconductor ecosystem. This data class was
+developed to store biological data that can be abstracted as
+measurements of a set of the same features across multiple samples.
+Several <code>assays</code> can be stored in the same object, with the
+restriction that they should map to the same set of features and sample
+identifiers, that is, that they are congruent. This is often useful to
+store measurements of features at different steps of processing. For
+example, a <code>SE</code> can store the raw counts as well as
+normalized RNA expression for the same genes on the same samples.</p>
+<p>These data are stored together with a set of column and row
+annotations that describe the features and samples. These annotations
+are stored in the <code>colData</code> and <code>rowData</code> slots of
+the <code>SE</code> object. The rowData can also be defined as a
+<code>GenomicRanges</code> object, which allows you to explicitly
+identify features with genomic coordinates, useful for storing
+measurements derived from the sequencing of DNA or RNA (e.g., mutations,
+copy number abberations, CHIP-seq peaks, etc).</p>
+<div class="figure">
+<img src="SummarizedExperiment_schematic.png" alt=""><p class="caption"><strong>SummarizedExperiment</strong> and
+<strong>MultiAssayExperiment</strong> classes.</p>
+</div>
+<p>The <code>MultiAssayExperiment</code> (<code>MAE</code>) is an
+extension of the <code>SummarizedExperiment</code> class that allows for
+the storage of multiple assays that are not necessarily congruent. This
+is useful for storing the results of diverse multi-omic profiling
+experiments, including mutation, RNA expression, copy number abberation
+and protein abundace.</p>
+<div class="figure">
+<img src="MultiAssayExperiment_schematic.png" alt=""><p class="caption"><strong>SummarizedExperiment</strong> and
+<strong>MultiAssayExperiment</strong> classes.</p>
+</div>
+<p>At the heart of both objects are feature by sample matrices, with the
+major difference being that the <code>SE</code> require congruent
+matrices (i.e., observations on the same set of features and samples)
+where as the <code>MAE</code> allows storage of disjoint sets of feature
+and samples via the use of the <code>sampleMap</code>, which,
+conceptually, stores a graph of the mapping from samples to each assay
+in the object.</p>
+<div class="section level4">
+<h4 id="hands-on-with-a-multiassayexperiment">Hands on with a MultiAssayExperiment<a class="anchor" aria-label="anchor" href="#hands-on-with-a-multiassayexperiment"></a>
+</h4>
+<p>For the majority of this workshop, we will be working with the
+NCI-ALMANAC, a large-scale drug combination screen conducted by the
+National Cancer Institute.</p>
+<p>The NCI-ALMANAC study did not conduct its own set of molecular
+profiling experiments, since the cell lines screened are part of the
+NCI60 collection. With this workshop, we included some of the NCI60
+molecular datasets as a <code>MultiAssayExperiment</code> object.</p>
+<p>Lets examine the included molecular data:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">NCI60_molecular_data</span><span class="op">)</span></span>
+<span><span class="op">(</span><span class="va">NCI60_molecular_data</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## A MultiAssayExperiment object of 3 listed</span></span>
+<span><span class="co">##  experiments with user-defined names and respective classes.</span></span>
+<span><span class="co">##  Containing an ExperimentList class object of length 3:</span></span>
+<span><span class="co">##  [1] rna: RangedSummarizedExperiment with 54609 rows and 59 columns</span></span>
+<span><span class="co">##  [2] mirna: RangedSummarizedExperiment with 417 rows and 59 columns</span></span>
+<span><span class="co">##  [3] rnaseq.comp: RangedSummarizedExperiment with 23808 rows and 59 columns</span></span>
+<span><span class="co">## Functionality:</span></span>
+<span><span class="co">##  experiments() - obtain the ExperimentList instance</span></span>
+<span><span class="co">##  colData() - the primary/phenotype DataFrame</span></span>
+<span><span class="co">##  sampleMap() - the sample coordination DataFrame</span></span>
+<span><span class="co">##  `$`, `[`, `[[` - extract colData columns, subset, or experiment</span></span>
+<span><span class="co">##  *Format() - convert into a long or wide DataFrame</span></span>
+<span><span class="co">##  assays() - convert ExperimentList to a SimpleList of matrices</span></span>
+<span><span class="co">##  exportClass() - save data to flat files</span></span></code></pre>
+<p>We can see the molecular data is available as
+<code>MultiAssayExperiment</code> containing 3
+<code>RangedSummarizedExperiment</code> objects. The molecular data
+types are:</p>
+<ol style="list-style-type: decimal">
+<li>“rna” represents RNA expression microarray data.</li>
+<li>“mirna” represents microRNA expression data.</li>
+<li>“rnaseq.comp” contains RNA sequencing data.</li>
+</ol>
+<p>To gain familiarity with working with
+<code>MultiAssayExperiment</code> objects, we will try to answer 3
+questions:</p>
+<ol style="list-style-type: decimal">
+<li>What is the most represented tissue type in the profiled NCI60 cell
+lines?</li>
+<li>What is the cell line expressing the highest expression of the MYC
+oncogene?</li>
+<li>What is the tissue type with the highest expression of HER2?</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section level2">
 <h2 id="introduction-to-coregx-and-pharmacogx">Introduction to CoreGx and PharmacoGx<a class="anchor" aria-label="anchor" href="#introduction-to-coregx-and-pharmacogx"></a>
 </h2>
-<p>This tutorial, titled <em>Pharmacogenomic Analysis of Drug
-Combination Experiments to Identify Biomarkers of Response or
-Resistance</em>, focuses on using the <em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
-R package to correlate treatment response, measured as the viability of
-cancer cell-lines after <em>in vitro</em> drug treatment, with their
-respective multi-omic profiles. <em><a href="https://bioconductor.org/packages/3.16/CoreGx" class="external-link">CoreGx</a></em>
-provides the core infrastructure for storing, analyzing, and visualizing
-generic treatment response experiments. It provides methods and classes
-which can be inherited from in downstream packages, such as <em><a href="https://bioconductor.org/packages/3.16/ToxicoGx" class="external-link">ToxicoGx</a></em>
-and <em><a href="https://bioconductor.org/packages/3.16/RadioGx" class="external-link">RadioGx</a></em>.
-We hope that the <code>CoreSet</code> object is generalized enough that
-it can be reused by other developers for their specific treatment (or
-stimuli) response use case.</p>
+<p>The <em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
+package was developed to provide a set of data structures and tools to
+work with the results of high-throughput drug screening experiments
+conducted on cancer cell lines, with a focus on the discovery of
+biomarkers predictive of drug response. In this workshop, we focus
+specifically on the analysis of data that comes from combination
+experiments, where the response is measured as the viability of the cell
+line after treatment with a combination of compounds.</p>
+<p>The <em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
+package is built on top of the <em><a href="https://bioconductor.org/packages/3.18/CoreGx" class="external-link">CoreGx</a></em>
+package, which provides a set of common data structures and tools that
+are commonly useful in correlating<br>
+phenotypic response to perturbation with compounds with the molecular
+state of samples.</p>
+<!--  insert a comment here about the GXsuite -->
 <div class="section level3">
 <h3 id="coregx">CoreGx<a class="anchor" aria-label="anchor" href="#coregx"></a>
 </h3>
 <div class="section level4">
 <h4 id="package-nomenclature">Package Nomenclature<a class="anchor" aria-label="anchor" href="#package-nomenclature"></a>
 </h4>
+<!-- Maybe make this into a sidebar comment? -->
 <p>To facilitate modularization of the GxSuite of R packages, we have
 shifted the nomenclature within a <code>CoreSet</code>—and therefore in
 inheriting packages —to be more general.</p>
@@ -348,12 +519,12 @@ the corresponding new function, as per Bioconductor best practices.</p>
 <div class="section level3">
 <h3 id="pharmacogx">PharmacoGx<a class="anchor" aria-label="anchor" href="#pharmacogx"></a>
 </h3>
-<p><em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
+<p><em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
 stores drug screening data together with molecular profiling of
 cell-lines in an object called a <code>PharmacoSet</code>, or
 <code>PSet</code> for short. This object inherits for the
 <code>CoreSet</code> class defined in our package <code>CoreGx</code>,
-which is used to share common datas structure and method across our
+which is used to share common data structure and methods across our
 suite of package. The primary use case for <code>PharmacoGx</code> is to
 provide a standardized and highly curated container for high-throughput
 screens in cancer-cell lines, with the goal of enabling discovery of
@@ -364,22 +535,22 @@ datasets.</p>
 </div>
 </div>
 <div class="section level2">
-<h2 id="overview-of-data-structures">Overview of Data Structures<a class="anchor" aria-label="anchor" href="#overview-of-data-structures"></a>
+<h2 id="overview-of-coregx-data-structures">Overview of CoreGx Data Structures<a class="anchor" aria-label="anchor" href="#overview-of-coregx-data-structures"></a>
 </h2>
-<p>The GxSuite of packages make use of various Bioconductor classes for
-storing molecular profile data.</p>
+<p>Conceptually, in vitro pharmacogenomic experiments contain 3 main
+“dimensions”: the samples assayed, the molecular features measured in
+those samples, and the compounds those samples were treated with. The
+<em><a href="https://bioconductor.org/packages/3.18/CoreGx" class="external-link">CoreGx</a></em> and
+<em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
+packages further extend the <code>SummarizedExperiment</code> and
+<code>MultiAssayExperiment</code> data structures to allow for the
+storage of the phenotypic readouts from the compound dimension, which
+often do not cleanly map onto a sample by feature matrix, together with
+the molecular data characterizing the treated samples.</p>
 <div class="section level3">
 <h3 id="coreset-and-pharmacoset">
 <code>CoreSet</code> and <code>PharmacoSet</code><a class="anchor" aria-label="anchor" href="#coreset-and-pharmacoset"></a>
 </h3>
-<p>With the recent updates in the structure and nomenclature of the
-<code>CoreSet</code>, the underling data structures are essentially
-identical. Previously, the “treatment” slot was specific to inheriting
-classes and named according to their domain specific use case, for
-example drug in <em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
-and radiation in <em><a href="https://bioconductor.org/packages/3.16/RadioGx" class="external-link">RadioGx</a></em>.
-Correspondingly, the “sample” slot was named cell and corresponded to
-<em>in vitro</em> immortalized human cancer cell-lines.</p>
 <div class="figure">
 <img src="CoreSet-class.drawio.png" alt=""><p class="caption"><strong>CoreSet / PharmacoSet class diagram</strong>.
 Objects comprising a <code>CoreSet</code> are enclosed in boxes. The
@@ -389,35 +560,7 @@ accessor methods from <code>PharmacoGx</code> for that specific object.
 ‘=&gt;’ represents return and specifies what is returned from that item
 or method.</p>
 </div>
-</div>
-<div class="section level3">
-<h3 id="multiassayexperiment-and-summarizedexperiment">
-<code>MultiAssayExperiment</code> and
-<code>SummarizedExperiment</code><a class="anchor" aria-label="anchor" href="#multiassayexperiment-and-summarizedexperiment"></a>
-</h3>
-<p>The <code>MultiAssayExperiment</code> (<code>MAE</code>) is a common
-Bioconductor class for storing the results of diverse multi-omic
-profiling experiments, including mutation, RNA expression, copy number
-abberation and protein abundace. Along with the
-<code>SummarizedExperiment</code> (<code>SE</code>), this object is used
-to store molecular phenotype data within a <code>CoreSet</code> and
-<code>PharmacoSet</code>.</p>
-<p>At the heart of both objects is a feature by sample matrix, with the
-major difference being that the <code>SE</code> require congruent
-matrices (i.e., observations on the same set of features and samples)
-where as the <code>MAE</code> allows storage of disjoint sets of feature
-and samples via the use of the <code>sampleMap</code>, which,
-conceptually, stores a graph of the mapping from samples to each assay
-in the object.</p>
-<div class="figure">
-<img src="MultiAssayExperiment_SummarizedExperiment_schematics.png" alt=""><p class="caption"><strong>SummarizedExperiment</strong> and
-<strong>MultiAssayExperiment</strong> classes.</p>
-</div>
-<p>For both these objects, rows map to molecular features (often genomic
-coordinates to better generalize across diverse molecular datatypes),
-and columns to samples. Metadata for both is available via the
-<code>rowData</code> and <code>colData</code> accessors,
-respectively.</p>
+<!-- add an exercise here to get people familiar with the accessors of these packages -->
 </div>
 <div class="section level3">
 <h3 id="treatmentresponseexperiment">
@@ -435,7 +578,8 @@ format <code>data.table</code> where integer keys define the relevant
 that table.</p>
 <p>For those familar with relational modelling from RDBMS systems, our
 design has taken inspiration from the star schema often used in OLAP
-applications to improve the efficiency of analytic database queries.</p>
+(Online Analytical Processing) applications to improve the efficiency of
+analytic database queries.</p>
 <div class="figure">
 <img src="TreatmentResponseExperimentClassDiagram.drawio.png" alt=""><p class="caption"><strong>TreatmentResponseExperiment class
 diagram</strong>. Objects comprising a
@@ -510,7 +654,7 @@ response of nerve cells to various types of sensory stimuli.</p>
 from rawdata files associated with a specific experiment or publication
 to a curated and standardized data format within an R <code>S4</code>
 class.</p>
-<p>In <em><a href="https://bioconductor.org/packages/3.16/CoreGx" class="external-link">CoreGx</a></em> we
+<p>In <em><a href="https://bioconductor.org/packages/3.18/CoreGx" class="external-link">CoreGx</a></em> we
 have implemented the <code>TREDataMapper</code> class, which encodes how
 the rawdata from a drug combination experiment should be transformed
 into its associated <code>TRE</code> object. A primary motivation for
@@ -530,15 +674,13 @@ from the NCI-ALMANAC drug combination experiment into a <code>TRE</code>
 object, ensuring that all study observations and relevant metadata are
 captured in our <code>TRE</code> and therefore in our
 <code>PharmacoSet</code>.</p>
-<p>By curating and releasing such <code>PharmacoSet</code> objects, we
-ensure that our users can access all information from the original
-publication via <em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
-and therefore easily ensure the reproducibility of the results as well
-as simplify their comparison against other curated mono and combination
-therapy <code>PharmacoSet</code>s object. In doing so, we help to
-improve the reproducibility and consistency of <em>in vitro</em>
-pharmacogenomic experiments and accelerate translation of insights from
-the lab into the clinic.</p>
+<!-- By curating and releasing such `PharmacoSet` objects, we ensure that our users
+can access all information from the original publication via *[PharmacoGx](https://bioconductor.org/packages/3.18/PharmacoGx)* and
+therefore easily ensure the reproducibility of the results as well as simplify
+their comparison against other curated mono and combination therapy
+`PharmacoSet`s object. In doing so, we help to improve the reproducibility and
+consistency of _in vitro_ pharmacogenomic experiments and accelerate translation
+of insights from the lab into the clinic. -->
 </div>
 <div class="section level4">
 <h4 id="using-the-tredatamapper-to-construct-a-treatmentresponseexperiment">Using the <code>TREDataMapper</code> to Construct a
@@ -552,251 +694,51 @@ attaching additional metadata for treatments, sample and any other
 entities defined in the publication. We have done this already and
 included it as the <code>NCI_ALMANAC_raw</code> dataset in the workshop
 package.</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">NCI_ALMANAC_raw</span><span class="op">)</span></span>
 <span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">NCI_ALMANAC_raw</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<table class="table">
-<colgroup>
-<col width="10%">
-<col width="3%">
-<col width="4%">
-<col width="4%">
-<col width="2%">
-<col width="1%">
-<col width="1%">
-<col width="1%">
-<col width="2%">
-<col width="2%">
-<col width="7%">
-<col width="2%">
-<col width="2%">
-<col width="3%">
-<col width="4%">
-<col width="4%">
-<col width="2%">
-<col width="3%">
-<col width="2%">
-<col width="3%">
-<col width="3%">
-<col width="2%">
-<col width="2%">
-<col width="1%">
-<col width="3%">
-<col width="2%">
-<col width="3%">
-<col width="1%">
-<col width="2%">
-<col width="2%">
-<col width="2%">
-<col width="2%">
-</colgroup>
-<thead><tr class="header">
-<th align="left">treatment1id</th>
-<th align="left">treatment2id</th>
-<th align="right">treatment1dose</th>
-<th align="right">treatment2dose</th>
-<th align="left">sampleid</th>
-<th align="right">CONC1</th>
-<th align="right">CONC2</th>
-<th align="right">NSC2</th>
-<th align="left">CELLNAME</th>
-<th align="right">CELLNBR</th>
-<th align="left">PANEL</th>
-<th align="right">PANELNBR</th>
-<th align="right">viability</th>
-<th align="right">PERCENTGROWTH</th>
-<th align="right">PERCENTGROWTHNOTZ</th>
-<th align="right">EXPECTEDGROWTH</th>
-<th align="right">TESTVALUE</th>
-<th align="right">CONTROLVALUE</th>
-<th align="right">TZVALUE</th>
-<th align="right">CONCINDEX1</th>
-<th align="right">CONCINDEX2</th>
-<th align="right">SAMPLE1</th>
-<th align="right">SAMPLE2</th>
-<th align="right">SCORE</th>
-<th align="right">COMBODRUGSEQ</th>
-<th align="left">STUDY</th>
-<th align="left">TESTDATE</th>
-<th align="left">PLATE</th>
-<th align="left">SCREENER</th>
-<th align="left">PREFIX2</th>
-<th align="right">bio_rep</th>
-<th align="right">tech_rep</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="left">1,3-Bis(2-chloroethyl)-1-nitrosourea</td>
-<td align="left"></td>
-<td align="right">0.05</td>
-<td align="right">NA</td>
-<td align="left">786-O</td>
-<td align="right">0</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">786-0</td>
-<td align="right">18</td>
-<td align="left">Renal Cancer</td>
-<td align="right">9</td>
-<td align="right">98.89562</td>
-<td align="right">98.367</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">2.776</td>
-<td align="right">2.807</td>
-<td align="right">0.909</td>
-<td align="right">-1</td>
-<td align="right">0</td>
-<td align="right">23</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">5587379</td>
-<td align="left">1307AC31</td>
-<td align="left">07/08/2013</td>
-<td align="left">3577</td>
-<td align="left">1A</td>
-<td align="left"></td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">1,3-Bis(2-chloroethyl)-1-nitrosourea</td>
-<td align="left"></td>
-<td align="right">0.05</td>
-<td align="right">NA</td>
-<td align="left">A-498</td>
-<td align="right">0</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">A498</td>
-<td align="right">13</td>
-<td align="left">Renal Cancer</td>
-<td align="right">9</td>
-<td align="right">98.63179</td>
-<td align="right">96.232</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">2.451</td>
-<td align="right">2.485</td>
-<td align="right">1.589</td>
-<td align="right">-1</td>
-<td align="right">0</td>
-<td align="right">23</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">5587364</td>
-<td align="left">1307AC31</td>
-<td align="left">07/08/2013</td>
-<td align="left">3432</td>
-<td align="left">1A</td>
-<td align="left"></td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td align="left">1,3-Bis(2-chloroethyl)-1-nitrosourea</td>
-<td align="left"></td>
-<td align="right">0.05</td>
-<td align="right">NA</td>
-<td align="left">A-549</td>
-<td align="right">0</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">A549/ATCC</td>
-<td align="right">4</td>
-<td align="left">Non-Small Cell Lung Cancer</td>
-<td align="right">1</td>
-<td align="right">100.91533</td>
-<td align="right">101.089</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1.764</td>
-<td align="right">1.748</td>
-<td align="right">0.325</td>
-<td align="right">-1</td>
-<td align="right">0</td>
-<td align="right">23</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">5587194</td>
-<td align="left">1307AC31</td>
-<td align="left">07/08/2013</td>
-<td align="left">3548</td>
-<td align="left">1A</td>
-<td align="left"></td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">1,3-Bis(2-chloroethyl)-1-nitrosourea</td>
-<td align="left"></td>
-<td align="right">0.05</td>
-<td align="right">NA</td>
-<td align="left">ACHN</td>
-<td align="right">0</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">ACHN</td>
-<td align="right">23</td>
-<td align="left">Renal Cancer</td>
-<td align="right">9</td>
-<td align="right">100.81652</td>
-<td align="right">101.054</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">2.099</td>
-<td align="right">2.082</td>
-<td align="right">0.492</td>
-<td align="right">-1</td>
-<td align="right">0</td>
-<td align="right">23</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">5587384</td>
-<td align="left">1307AC31</td>
-<td align="left">07/08/2013</td>
-<td align="left">3606</td>
-<td align="left">1A</td>
-<td align="left"></td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td align="left">1,3-Bis(2-chloroethyl)-1-nitrosourea</td>
-<td align="left"></td>
-<td align="right">0.05</td>
-<td align="right">NA</td>
-<td align="left">BT-549</td>
-<td align="right">0</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">BT-549</td>
-<td align="right">13</td>
-<td align="left">Breast Cancer</td>
-<td align="right">5</td>
-<td align="right">95.67643</td>
-<td align="right">91.405</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">2.058</td>
-<td align="right">2.151</td>
-<td align="right">1.069</td>
-<td align="right">-1</td>
-<td align="right">0</td>
-<td align="right">23</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">5587284</td>
-<td align="left">1307AC31</td>
-<td align="left">07/08/2013</td>
-<td align="left">3577</td>
-<td align="left">1A</td>
-<td align="left"></td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-</tbody>
-</table>
+<pre><code><span><span class="co">##                            treatment1id treatment2id treatment1dose</span></span>
+<span><span class="co">## 1: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 2: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 3: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 4: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 5: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 6: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">##    treatment2dose sampleid CONC1 CONC2 NSC2  CELLNAME CELLNBR</span></span>
+<span><span class="co">## 1:             NA    786-O 5e-08    NA   NA     786-0      18</span></span>
+<span><span class="co">## 2:             NA    A-498 5e-08    NA   NA      A498      13</span></span>
+<span><span class="co">## 3:             NA    A-549 5e-08    NA   NA A549/ATCC       4</span></span>
+<span><span class="co">## 4:             NA     ACHN 5e-08    NA   NA      ACHN      23</span></span>
+<span><span class="co">## 5:             NA   BT-549 5e-08    NA   NA    BT-549      13</span></span>
+<span><span class="co">## 6:             NA CCRF-CEM 5e-08    NA   NA  CCRF-CEM       3</span></span>
+<span><span class="co">##                         PANEL PANELNBR viability PERCENTGROWTH</span></span>
+<span><span class="co">## 1:               Renal Cancer        9  98.89562        98.367</span></span>
+<span><span class="co">## 2:               Renal Cancer        9  98.63179        96.232</span></span>
+<span><span class="co">## 3: Non-Small Cell Lung Cancer        1 100.91533       101.089</span></span>
+<span><span class="co">## 4:               Renal Cancer        9 100.81652       101.054</span></span>
+<span><span class="co">## 5:              Breast Cancer        5  95.67643        91.405</span></span>
+<span><span class="co">## 6:                   Leukemia        7 102.38559       103.175</span></span>
+<span><span class="co">##    PERCENTGROWTHNOTZ EXPECTEDGROWTH TESTVALUE CONTROLVALUE TZVALUE CONCINDEX1</span></span>
+<span><span class="co">## 1:                NA             NA     2.776        2.807   0.909         -1</span></span>
+<span><span class="co">## 2:                NA             NA     2.451        2.485   1.589         -1</span></span>
+<span><span class="co">## 3:                NA             NA     1.764        1.748   0.325         -1</span></span>
+<span><span class="co">## 4:                NA             NA     2.099        2.082   0.492         -1</span></span>
+<span><span class="co">## 5:                NA             NA     2.058        2.151   1.069         -1</span></span>
+<span><span class="co">## 6:                NA             NA     2.103        2.054   0.510         -1</span></span>
+<span><span class="co">##    CONCINDEX2 SAMPLE1 SAMPLE2 SCORE COMBODRUGSEQ    STUDY   TESTDATE PLATE</span></span>
+<span><span class="co">## 1:          0      23      NA    NA      5587379 1307AC31 07/08/2013  3577</span></span>
+<span><span class="co">## 2:          0      23      NA    NA      5587364 1307AC31 07/08/2013  3432</span></span>
+<span><span class="co">## 3:          0      23      NA    NA      5587194 1307AC31 07/08/2013  3548</span></span>
+<span><span class="co">## 4:          0      23      NA    NA      5587384 1307AC31 07/08/2013  3606</span></span>
+<span><span class="co">## 5:          0      23      NA    NA      5587284 1307AC31 07/08/2013  3577</span></span>
+<span><span class="co">## 6:          0      23      NA    NA      5587324 1307AC31 07/08/2013  3374</span></span>
+<span><span class="co">##    SCREENER PREFIX2 bio_rep tech_rep</span></span>
+<span><span class="co">## 1:       1A               1        1</span></span>
+<span><span class="co">## 2:       1A               1        1</span></span>
+<span><span class="co">## 3:       1A               1        1</span></span>
+<span><span class="co">## 4:       1A               1        1</span></span>
+<span><span class="co">## 5:       1A               1        1</span></span>
+<span><span class="co">## 6:       1A               1        1</span></span></code></pre>
 <p>Viewing the table, we see that each column represents a variable, and
 that the number of rows in the table corresponds to the number of
 dose-response observations measured in the <code>NCI-ALMANAC</code>
@@ -813,7 +755,7 @@ class to work, our rawdata must first be in a single large, tidy
 conditions are already met for the included example data, we can create
 of <code>TREDataMapper</code> object and start exploring the to
 dimensionality of the experiment in question!</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">treDataMapper</span> <span class="op">&lt;-</span> <span class="fu">TREDataMapper</span><span class="op">(</span>rawdata<span class="op">=</span><span class="va">NCI_ALMANAC_raw</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code>##  [33m [1m [3m&lt;TREDataMapper&gt; 
 ##  [23m [22m [39m [33m [1mrawdata: [22m [39m dim(534179, 32)
@@ -837,7 +779,7 @@ dimensionality of the experiment in question!</p>
 <p>A <code>DataMapper</code> as a concept is simply a collection of
 metadata around our raw data which defines how different columns map to
 different aspects of our target <code>S4</code> class. For a
-<code>TRE</code>, similar to a <em><a href="https://bioconductor.org/packages/3.16/SummarizedExperiment" class="external-link">SummarizedExperiment</a></em>,
+<code>TRE</code>, similar to a <em><a href="https://bioconductor.org/packages/3.18/SummarizedExperiment" class="external-link">SummarizedExperiment</a></em>,
 we have the concept of <code>rowData</code> which defines what is
 considered a treatment (a specific drug combination, its doses and
 potential technical replicates) and <code>colData</code> which defines
@@ -855,7 +797,7 @@ rows, columns and assays, we specify the subset parmeter to indicate we
 want to remove any mapped columns before moving on to the next group.
 This prevents multimapping a column to several groups and is generally
 recommended.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">groups1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
 <span>    rowDataMap<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"treatment1id"</span>, <span class="st">"treatment2id"</span>, <span class="st">"treatment1dose"</span>,</span>
 <span>        <span class="st">"treatment2dose"</span><span class="op">)</span>,</span>
@@ -919,7 +861,7 @@ combination experiment. One potential cause for this is inclusion of
 technical or biological replicates.</p>
 <p>Indeed, for the NCI-ALMANAC both of these kinds of replicates are
 present.</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="fu">rawdata</span><span class="op">(</span><span class="va">treDataMapper</span><span class="op">)</span>, give.attr<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## Classes 'data.table' and 'data.frame':   534179 obs. of  32 variables:</span></span>
 <span><span class="co">##  $ treatment1id     : chr  "1,3-Bis(2-chloroethyl)-1-nitrosourea" "1,3-Bis(2-chloroethyl)-1-nitrosourea" "1,3-Bis(2-chloroethyl)-1-nitrosourea" "1,3-Bis(2-chloroethyl)-1-nitrosourea" ...</span></span>
@@ -960,14 +902,15 @@ preprocessing. We identified biological replicates as observations of
 the sample treatment, dose and sample combination across multiple dates.
 Technical replicates were the defined as any additional rows not mapped
 to treatment, dose, sample and biological replicates.</p>
-<p>For your own data in the wild, you will likely need to consult the
-original publication and explore the data to differentiate these two
-types of replicates and assign identifiers which make every observation
-within an experiment unique.</p>
+<p>For your own data in the wild, you will likely need to consult your
+experimental colleagues, οr the original publication and explore the
+data to differentiate these two types of replicates and assign
+identifiers which make every observation within an experiment
+unique.</p>
 <p>For our second guess we will include these columns, mapping
 biological replicates to samples and technical replicates to
 treatments.</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">groups2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
 <span>    rowDataMap<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"treatment1id"</span>, <span class="st">"treatment2id"</span>, <span class="st">"treatment1dose"</span>,</span>
 <span>        <span class="st">"treatment2dose"</span>, <span class="st">"tech_rep"</span><span class="op">)</span>,</span>
@@ -1038,13 +981,13 @@ so we can use it to construct a
 <code>metadata</code> list of the createed <code>TRE</code>, other
 dimension maps can be assigned directly to the slots of the
 <code>TREDataMapper</code>.</p>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">metadataMap</span><span class="op">(</span><span class="va">treDataMapper</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>experiment_metadata<span class="op">=</span><span class="va">guess2</span><span class="op">$</span><span class="va">metadata</span><span class="op">$</span><span class="va">mapped_columns</span><span class="op">)</span></span>
 <span><span class="fu">rowDataMap</span><span class="op">(</span><span class="va">treDataMapper</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="va">guess2</span><span class="op">$</span><span class="va">rowDataMap</span></span>
 <span><span class="fu">colDataMap</span><span class="op">(</span><span class="va">treDataMapper</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="va">guess2</span><span class="op">$</span><span class="va">colDataMap</span></span></code></pre></div>
 <p>Unless we wish to have a single large assay in our <code>TRE</code>,
 we should further subdivide our assay columns into sensible groups.</p>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="op">(</span><span class="va">guess2</span><span class="op">$</span><span class="va">assayMap</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## $id_columns</span></span>
 <span><span class="co">## [1] "treatment1id"   "treatment2id"   "treatment1dose" "treatment2dose"</span></span>
@@ -1060,7 +1003,7 @@ we should further subdivide our assay columns into sensible groups.</p>
 <p>For the NCI-ALMANAC we have decided to separate our
 treatment-response measurements into the “response” assay. Any
 additional metadata which doesn’t map cleaning to rows or columns gets
-assigned to “assay_metadata”. The publsihed synergy score will go in the
+assigned to “assay_metadata”. The published synergy score will go in the
 “profiles” assay, which generally stores metrics computed from the
 “response” assay.</p>
 <p>For our assay definitions we setup a nested list where each item
@@ -1072,7 +1015,7 @@ specifies the definition of the assay table.</p>
 However, this is not a requirement and it may be more efficient to test
 further subgroupings with our identifier columns to prevent uncessarily
 repeating values in our <code>TRE</code>.</p>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">assaymap</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
 <span>    response<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
 <span>        id_columns<span class="op">=</span><span class="va">guess2</span><span class="op">$</span><span class="va">assayMap</span><span class="op">$</span><span class="va">id_columns</span>,</span>
@@ -1131,7 +1074,7 @@ repeating values in our <code>TRE</code>.</p>
 <code>metaConstruct</code>, which combines together the rawdata and the
 metadata into a constructor call for the
 <code>TreatmentResponseExperiment</code>.</p>
-<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="op">(</span><span class="va">NCI_ALMANAC_tre</span> <span class="op">&lt;-</span> <span class="fu">metaConstruct</span><span class="op">(</span><span class="va">treDataMapper</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## <span style="color: #BBBB00; font-weight: bold; font-style: italic;">&lt;TreatmentResponseExperiment&gt; </span></span></span>
 <span><span class="co"><span style="color: #BBBB00; font-weight: bold; font-style: italic;">## </span><span style="color: #BBBB00; font-weight: bold;">dim:  10080 62 </span></span></span>
@@ -1141,9 +1084,334 @@ metadata into a constructor call for the
 <span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colnames(62): </span><span style="color: #00BB00;">786-O:1 A-498:1 A-549:1 ... UACC-257:1 UACC-62:1 UO-31:1</span> </span></span>
 <span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colData(6): </span><span style="color: #00BB00;">sampleid bio_rep CELLNAME CELLNBR PANEL PANELNBR</span> </span></span>
 <span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">metadata(1): </span><span style="color: #00BB00;">experiment_metadata</span></span></span></code></pre>
+<!-- add section on subsetting and interacting with tre -->
+</div>
+</div>
+<div class="section level3">
+<h3 id="working-with-a-treatmentresponseexperiment">Working with a <code>TreatmentResponseExperiment</code><a class="anchor" aria-label="anchor" href="#working-with-a-treatmentresponseexperiment"></a>
+</h3>
+<div class="section level4">
+<h4 id="subsetting-and-extracting-data">Subsetting and Extracting Data<a class="anchor" aria-label="anchor" href="#subsetting-and-extracting-data"></a>
+</h4>
+<p>One of the benefits of transforming your data into a <code>TRE</code>
+object is that you gain an expressive syntax with which to subset and
+extract data. Recall that when we mapped the data onto the structure of
+the <code>TRE</code>, we defined row and column identifiers. For
+example, using the <code>rowIDs</code> method, we can see the
+identifiers that are associated with the rows of the object:</p>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="op">(</span><span class="fu">rowIDs</span><span class="op">(</span><span class="va">NCI_ALMANAC_tre</span><span class="op">)</span><span class="op">)</span> </span></code></pre></div>
+<pre><code><span><span class="co">## [1] "treatment1id"   "treatment2id"   "treatment1dose" "treatment2dose"</span></span>
+<span><span class="co">## [5] "tech_rep"</span></span></code></pre>
+<p>These columns were combined to create pseudo-rownames for the
+object:</p>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">tail</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">rownames</a></span><span class="op">(</span><span class="va">NCI_ALMANAC_tre</span><span class="op">)</span><span class="op">)</span> </span></code></pre></div>
+<pre><code><span><span class="co">## [1] "Vorinostat:Vincristine:0.1:0.001:1" "Vorinostat:Vincristine:0.1:0.01:1" </span></span>
+<span><span class="co">## [3] "Vorinostat:Vincristine:0.1:0.1:1"   "Vorinostat:Vincristine:1:0.001:1"  </span></span>
+<span><span class="co">## [5] "Vorinostat:Vincristine:1:0.01:1"    "Vorinostat:Vincristine:1:0.1:1"</span></span></code></pre>
+<p>These pseudo-rownames are concentrations of the values in the rowID
+columns, however, they do not explicitly exist as rownames to any
+particular assay. While they can be used explicitly to get at specific
+observations, the power of the TRE comes when they are combined with
+wildcards, denoted by <code>*</code>, to extract data from the object.
+For example, we could subset the TRE to a particular treatment as
+follows:</p>
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span><span class="op">[</span><span class="st">"Vorinostat:Vincristine:0.1:0.001:1"</span>,<span class="op">]</span></span></code></pre></div>
+<pre><code><span><span class="co">## <span style="color: #BBBB00; font-weight: bold; font-style: italic;">&lt;TreatmentResponseExperiment&gt; </span></span></span>
+<span><span class="co"><span style="color: #BBBB00; font-weight: bold; font-style: italic;">## </span><span style="color: #BBBB00; font-weight: bold;">dim:  1 56 </span></span></span>
+<span><span class="co"><span style="color: #BBBB00; font-weight: bold;">## assays(3): </span><span style="color: #BB0000;">response profiles assay_metadata</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">rownames(1): </span><span style="color: #00BB00;">Vorinostat:Vincristine:0.1:0.001:1</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">rowData(9): </span><span style="color: #00BB00;">treatment1id treatment2id treatment1dose ... CONC2 NSC2 CONCINDEX2</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colnames(56): </span><span style="color: #00BB00;">786-O:1 A-498:1 A-549:1 ... UACC-257:1 UACC-62:1 UO-31:1</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colData(6): </span><span style="color: #00BB00;">sampleid bio_rep CELLNAME CELLNBR PANEL PANELNBR</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">metadata(1): </span><span style="color: #00BB00;">experiment_metadata</span></span></span></code></pre>
+<p>As you can see, this extracts the subset of data across all samples
+which were treated with the combination of Vorinostat and Vincristine at
+concentrations of 0.1 and 0.001, µm respectively. If we want extract the
+response data for all the concentrations in this drug combo for a
+particular sample, we can then subset the object, and then extract the
+response assay as follows:</p>
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span><span class="op">[</span><span class="st">"Vorinostat:Vincristine:*:*:*"</span>,<span class="st">"A-498:*"</span><span class="op">]</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">assay</span><span class="op">(</span><span class="st">"response"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##    treatment1id treatment2id treatment1dose treatment2dose tech_rep sampleid</span></span>
+<span><span class="co">## 1:   Vorinostat  Vincristine           0.01          0.001        1    A-498</span></span>
+<span><span class="co">## 2:   Vorinostat  Vincristine           0.01          0.010        1    A-498</span></span>
+<span><span class="co">## 3:   Vorinostat  Vincristine           0.01          0.100        1    A-498</span></span>
+<span><span class="co">## 4:   Vorinostat  Vincristine           0.10          0.001        1    A-498</span></span>
+<span><span class="co">## 5:   Vorinostat  Vincristine           0.10          0.010        1    A-498</span></span>
+<span><span class="co">## 6:   Vorinostat  Vincristine           0.10          0.100        1    A-498</span></span>
+<span><span class="co">## 7:   Vorinostat  Vincristine           1.00          0.001        1    A-498</span></span>
+<span><span class="co">## 8:   Vorinostat  Vincristine           1.00          0.010        1    A-498</span></span>
+<span><span class="co">## 9:   Vorinostat  Vincristine           1.00          0.100        1    A-498</span></span>
+<span><span class="co">##    bio_rep CONC1 CONC2 CONCINDEX2  NSC2 CELLNAME CELLNBR        PANEL PANELNBR</span></span>
+<span><span class="co">## 1:       1 1e-08 1e-09          1 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 2:       1 1e-08 1e-08          2 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 3:       1 1e-08 1e-07          3 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 4:       1 1e-07 1e-09          1 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 5:       1 1e-07 1e-08          2 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 6:       1 1e-07 1e-07          3 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 7:       1 1e-06 1e-09          1 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 8:       1 1e-06 1e-08          2 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 9:       1 1e-06 1e-07          3 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">##    viability PERCENTGROWTH PERCENTGROWTHNOTZ EXPECTEDGROWTH TESTVALUE</span></span>
+<span><span class="co">## 1: 102.75610        103.80            102.76         98.008  10347840</span></span>
+<span><span class="co">## 2:  98.43368         97.84             98.43         95.060   9912560</span></span>
+<span><span class="co">## 3:  95.56624         93.89             95.57         94.044   9623800</span></span>
+<span><span class="co">## 4:  96.75627         95.53             96.76         96.756   9743640</span></span>
+<span><span class="co">## 5:  99.47754         99.28             99.48         93.845  10017680</span></span>
+<span><span class="co">## 6:  90.17732         86.46             90.18         92.843   9081120</span></span>
+<span><span class="co">## 7:  89.01946         84.86             89.02         80.854   8964520</span></span>
+<span><span class="co">## 8:  77.25336         68.63             77.25         78.421   7779640</span></span>
+<span><span class="co">## 9:  81.76644         74.86             81.77         77.583   8234120</span></span>
+<span><span class="co">##    CONTROLVALUE TZVALUE</span></span>
+<span><span class="co">## 1:     10070293 2767084</span></span>
+<span><span class="co">## 2:     10070293 2767084</span></span>
+<span><span class="co">## 3:     10070293 2767084</span></span>
+<span><span class="co">## 4:     10070293 2767084</span></span>
+<span><span class="co">## 5:     10070293 2767084</span></span>
+<span><span class="co">## 6:     10070293 2767084</span></span>
+<span><span class="co">## 7:     10070293 2767084</span></span>
+<span><span class="co">## 8:     10070293 2767084</span></span>
+<span><span class="co">## 9:     10070293 2767084</span></span></code></pre>
+<p>Here, we use the <code>*</code> character to denote that we want all
+the possible values for the last three rowID columns (treatment1dose,
+treatment2dose, and tech_rep), and the second colID column
+(bio_rep).</p>
+<p>In an example like this, it is possible to also use a shorthand,
+where the <code>*</code> is omitted for the trailing columns:</p>
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span><span class="op">[</span><span class="st">"Vorinostat:Vincristine"</span>,<span class="st">"A-498"</span><span class="op">]</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">assay</span><span class="op">(</span><span class="st">"response"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##    treatment1id treatment2id treatment1dose treatment2dose tech_rep sampleid</span></span>
+<span><span class="co">## 1:   Vorinostat  Vincristine           0.01          0.001        1    A-498</span></span>
+<span><span class="co">## 2:   Vorinostat  Vincristine           0.01          0.010        1    A-498</span></span>
+<span><span class="co">## 3:   Vorinostat  Vincristine           0.01          0.100        1    A-498</span></span>
+<span><span class="co">## 4:   Vorinostat  Vincristine           0.10          0.001        1    A-498</span></span>
+<span><span class="co">## 5:   Vorinostat  Vincristine           0.10          0.010        1    A-498</span></span>
+<span><span class="co">## 6:   Vorinostat  Vincristine           0.10          0.100        1    A-498</span></span>
+<span><span class="co">## 7:   Vorinostat  Vincristine           1.00          0.001        1    A-498</span></span>
+<span><span class="co">## 8:   Vorinostat  Vincristine           1.00          0.010        1    A-498</span></span>
+<span><span class="co">## 9:   Vorinostat  Vincristine           1.00          0.100        1    A-498</span></span>
+<span><span class="co">##    bio_rep CONC1 CONC2 CONCINDEX2  NSC2 CELLNAME CELLNBR        PANEL PANELNBR</span></span>
+<span><span class="co">## 1:       1 1e-08 1e-09          1 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 2:       1 1e-08 1e-08          2 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 3:       1 1e-08 1e-07          3 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 4:       1 1e-07 1e-09          1 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 5:       1 1e-07 1e-08          2 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 6:       1 1e-07 1e-07          3 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 7:       1 1e-06 1e-09          1 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 8:       1 1e-06 1e-08          2 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">## 9:       1 1e-06 1e-07          3 67574     A498      13 Renal Cancer        9</span></span>
+<span><span class="co">##    viability PERCENTGROWTH PERCENTGROWTHNOTZ EXPECTEDGROWTH TESTVALUE</span></span>
+<span><span class="co">## 1: 102.75610        103.80            102.76         98.008  10347840</span></span>
+<span><span class="co">## 2:  98.43368         97.84             98.43         95.060   9912560</span></span>
+<span><span class="co">## 3:  95.56624         93.89             95.57         94.044   9623800</span></span>
+<span><span class="co">## 4:  96.75627         95.53             96.76         96.756   9743640</span></span>
+<span><span class="co">## 5:  99.47754         99.28             99.48         93.845  10017680</span></span>
+<span><span class="co">## 6:  90.17732         86.46             90.18         92.843   9081120</span></span>
+<span><span class="co">## 7:  89.01946         84.86             89.02         80.854   8964520</span></span>
+<span><span class="co">## 8:  77.25336         68.63             77.25         78.421   7779640</span></span>
+<span><span class="co">## 9:  81.76644         74.86             81.77         77.583   8234120</span></span>
+<span><span class="co">##    CONTROLVALUE TZVALUE</span></span>
+<span><span class="co">## 1:     10070293 2767084</span></span>
+<span><span class="co">## 2:     10070293 2767084</span></span>
+<span><span class="co">## 3:     10070293 2767084</span></span>
+<span><span class="co">## 4:     10070293 2767084</span></span>
+<span><span class="co">## 5:     10070293 2767084</span></span>
+<span><span class="co">## 6:     10070293 2767084</span></span>
+<span><span class="co">## 7:     10070293 2767084</span></span>
+<span><span class="co">## 8:     10070293 2767084</span></span>
+<span><span class="co">## 9:     10070293 2767084</span></span></code></pre>
+<p>This is equivalent to the previous example, but is more concise.</p>
+<p>If you’ve noticed, there is one annoying detail here, which is that
+we need to know which of the two compounds is in the treatment1id
+column, and which is in the treatment2id column. Fortunately, the
+<code>TRE</code> subset method provides us with two efficient ways
+around this. When we subset using only single compound name, (for
+example <code>"Vincristine"</code>), it will automatically search all
+rowIDs for matches:</p>
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span><span class="op">[</span><span class="st">"Vincristine"</span>, <span class="st">"A-498"</span><span class="op">]</span></span></code></pre></div>
+<pre><code><span><span class="co">## <span style="color: #BBBB00; font-weight: bold; font-style: italic;">&lt;TreatmentResponseExperiment&gt; </span></span></span>
+<span><span class="co"><span style="color: #BBBB00; font-weight: bold; font-style: italic;">## </span><span style="color: #BBBB00; font-weight: bold;">dim:  536 1 </span></span></span>
+<span><span class="co"><span style="color: #BBBB00; font-weight: bold;">## assays(3): </span><span style="color: #BB0000;">response profiles assay_metadata</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">rownames(536): </span><span style="color: #00BB00;">1,3-Bis(2-chloroethyl)-1-nitrosourea:Vincristine:0.2:0.001:1 1,3-Bis(2-chloroethyl)-1-nitrosourea:Vincristine:0.2:0.01:1 ... Vorinostat:Vincristine:1:0.01:1 Vorinostat:Vincristine:1:0.1:1</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">rowData(9): </span><span style="color: #00BB00;">treatment1id treatment2id treatment1dose ... CONC2 NSC2 CONCINDEX2</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colnames(1): </span><span style="color: #00BB00;">A-498:1</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colData(6): </span><span style="color: #00BB00;">sampleid bio_rep CELLNAME CELLNBR PANEL PANELNBR</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">metadata(1): </span><span style="color: #00BB00;">experiment_metadata</span></span></span></code></pre>
+<p>We can string these subsets together to get a specific combination
+without knowing the ordering:</p>
+<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span><span class="op">[</span><span class="st">"Vincristine"</span>, <span class="st">"A-498"</span><span class="op">]</span><span class="op">[</span><span class="st">"Vorinostat"</span>, <span class="op">]</span></span></code></pre></div>
+<pre><code><span><span class="co">## <span style="color: #BBBB00; font-weight: bold; font-style: italic;">&lt;TreatmentResponseExperiment&gt; </span></span></span>
+<span><span class="co"><span style="color: #BBBB00; font-weight: bold; font-style: italic;">## </span><span style="color: #BBBB00; font-weight: bold;">dim:  9 1 </span></span></span>
+<span><span class="co"><span style="color: #BBBB00; font-weight: bold;">## assays(3): </span><span style="color: #BB0000;">response profiles assay_metadata</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">rownames(9): </span><span style="color: #00BB00;">Vorinostat:Vincristine:0.01:0.001:1 Vorinostat:Vincristine:0.01:0.01:1 ... Vorinostat:Vincristine:1:0.01:1 Vorinostat:Vincristine:1:0.1:1</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">rowData(9): </span><span style="color: #00BB00;">treatment1id treatment2id treatment1dose ... CONC2 NSC2 CONCINDEX2</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colnames(1): </span><span style="color: #00BB00;">A-498:1</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colData(6): </span><span style="color: #00BB00;">sampleid bio_rep CELLNAME CELLNBR PANEL PANELNBR</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">metadata(1): </span><span style="color: #00BB00;">experiment_metadata</span></span></span></code></pre>
+<p>Alternatively, the subset syntax supports or operations using the
+<code>|</code> character. This allows us to express the same subset as
+follows:</p>
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span><span class="op">[</span><span class="st">"Vincristine:Vorinostat|Vorinostat:Vincristine"</span>, <span class="st">"A-498"</span><span class="op">]</span></span></code></pre></div>
+<pre><code><span><span class="co">## <span style="color: #BBBB00; font-weight: bold; font-style: italic;">&lt;TreatmentResponseExperiment&gt; </span></span></span>
+<span><span class="co"><span style="color: #BBBB00; font-weight: bold; font-style: italic;">## </span><span style="color: #BBBB00; font-weight: bold;">dim:  9 1 </span></span></span>
+<span><span class="co"><span style="color: #BBBB00; font-weight: bold;">## assays(3): </span><span style="color: #BB0000;">response profiles assay_metadata</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">rownames(9): </span><span style="color: #00BB00;">Vorinostat:Vincristine:0.01:0.001:1 Vorinostat:Vincristine:0.01:0.01:1 ... Vorinostat:Vincristine:1:0.01:1 Vorinostat:Vincristine:1:0.1:1</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">rowData(9): </span><span style="color: #00BB00;">treatment1id treatment2id treatment1dose ... CONC2 NSC2 CONCINDEX2</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colnames(1): </span><span style="color: #00BB00;">A-498:1</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">colData(6): </span><span style="color: #00BB00;">sampleid bio_rep CELLNAME CELLNBR PANEL PANELNBR</span> </span></span>
+<span><span class="co">## <span style="color: #BBBB00; font-weight: bold;">metadata(1): </span><span style="color: #00BB00;">experiment_metadata</span></span></span></code></pre>
+<p>Note that whether the assignment of a compound to treatment 1 or
+treatment 2 is arbitrary is dependent on the experimental design. In
+this case, the experiments were done in 3x3 or 5x5 designs, making the
+distinction meaningless. However, other experimental designs can use an
+‘anchor’ compound approach, where one compound is tested at fewer
+(e.g. 2) concentrations together with a larger number of concentrations
+for compound 2. In that case, the experiment “Vincristine:Vorinostat”
+could be different from “Vorinostat:Vincristine”.</p>
+<p>We have already seen that we can extract specific assays using the
+<code>assay</code> method. This is also possible with the <code>$</code>
+operatior.</p>
+<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span><span class="op">$</span><span class="va">response</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##                            treatment1id treatment2id treatment1dose</span></span>
+<span><span class="co">## 1: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 2: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 3: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 4: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 5: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 6: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">##    treatment2dose tech_rep sampleid bio_rep CONC1 CONC2 CONCINDEX2 NSC2</span></span>
+<span><span class="co">## 1:             NA        1    786-O       1 5e-08    NA          0   NA</span></span>
+<span><span class="co">## 2:             NA        1    A-498       1 5e-08    NA          0   NA</span></span>
+<span><span class="co">## 3:             NA        1    A-549       1 5e-08    NA          0   NA</span></span>
+<span><span class="co">## 4:             NA        1     ACHN       1 5e-08    NA          0   NA</span></span>
+<span><span class="co">## 5:             NA        1   BT-549       1 5e-08    NA          0   NA</span></span>
+<span><span class="co">## 6:             NA        1 CCRF-CEM       1 5e-08    NA          0   NA</span></span>
+<span><span class="co">##     CELLNAME CELLNBR                      PANEL PANELNBR viability</span></span>
+<span><span class="co">## 1:     786-0      18               Renal Cancer        9  98.89562</span></span>
+<span><span class="co">## 2:      A498      13               Renal Cancer        9  98.63179</span></span>
+<span><span class="co">## 3: A549/ATCC       4 Non-Small Cell Lung Cancer        1 100.91533</span></span>
+<span><span class="co">## 4:      ACHN      23               Renal Cancer        9 100.81652</span></span>
+<span><span class="co">## 5:    BT-549      13              Breast Cancer        5  95.67643</span></span>
+<span><span class="co">## 6:  CCRF-CEM       3                   Leukemia        7 102.38559</span></span>
+<span><span class="co">##    PERCENTGROWTH PERCENTGROWTHNOTZ EXPECTEDGROWTH TESTVALUE CONTROLVALUE</span></span>
+<span><span class="co">## 1:        98.367                NA             NA     2.776        2.807</span></span>
+<span><span class="co">## 2:        96.232                NA             NA     2.451        2.485</span></span>
+<span><span class="co">## 3:       101.089                NA             NA     1.764        1.748</span></span>
+<span><span class="co">## 4:       101.054                NA             NA     2.099        2.082</span></span>
+<span><span class="co">## 5:        91.405                NA             NA     2.058        2.151</span></span>
+<span><span class="co">## 6:       103.175                NA             NA     2.103        2.054</span></span>
+<span><span class="co">##    TZVALUE</span></span>
+<span><span class="co">## 1:   0.909</span></span>
+<span><span class="co">## 2:   1.589</span></span>
+<span><span class="co">## 3:   0.325</span></span>
+<span><span class="co">## 4:   0.492</span></span>
+<span><span class="co">## 5:   1.069</span></span>
+<span><span class="co">## 6:   0.510</span></span></code></pre>
+<p>Information about each specific ‘row’ or ‘column’ can be extracted
+using the <code>rowData</code> and <code>colData</code> methods:</p>
+<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">rowData</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##                            treatment1id treatment2id treatment1dose</span></span>
+<span><span class="co">## 1: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.05</span></span>
+<span><span class="co">## 2: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.15</span></span>
+<span><span class="co">## 3: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.15</span></span>
+<span><span class="co">## 4: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.15</span></span>
+<span><span class="co">## 5: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.20</span></span>
+<span><span class="co">## 6: 1,3-Bis(2-chloroethyl)-1-nitrosourea                        0.20</span></span>
+<span><span class="co">##    treatment2dose tech_rep   CONC1 CONC2 NSC2 CONCINDEX2</span></span>
+<span><span class="co">## 1:             NA        1 5.0e-08    NA   NA          0</span></span>
+<span><span class="co">## 2:             NA        1 1.5e-07    NA   NA          0</span></span>
+<span><span class="co">## 3:             NA        2 1.5e-07    NA   NA          0</span></span>
+<span><span class="co">## 4:             NA        3 1.5e-07    NA   NA          0</span></span>
+<span><span class="co">## 5:             NA        1 2.0e-07    NA   NA          0</span></span>
+<span><span class="co">## 6:             NA        2 2.0e-07    NA   NA          0</span></span></code></pre>
+<p>Finally, if you notice above, a call to assay returns the data with
+the rowData and colData<br>
+included in the data.frame. This is the default behaviour, however, it
+can be modified either to only include the row and column IDs by setting
+<code>metadata=FALSE</code>, or to not append anything to the data.frame
+by setting <code>withDimnames=FALSE</code>.</p>
+<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span><span class="op">[</span><span class="st">"Vorinostat:Vincristine"</span>, <span class="st">"A-498"</span><span class="op">]</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">assay</span><span class="op">(</span><span class="st">"response"</span>, metadata<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##    treatment1id treatment2id treatment1dose treatment2dose tech_rep sampleid</span></span>
+<span><span class="co">## 1:   Vorinostat  Vincristine           0.01          0.001        1    A-498</span></span>
+<span><span class="co">## 2:   Vorinostat  Vincristine           0.01          0.010        1    A-498</span></span>
+<span><span class="co">## 3:   Vorinostat  Vincristine           0.01          0.100        1    A-498</span></span>
+<span><span class="co">## 4:   Vorinostat  Vincristine           0.10          0.001        1    A-498</span></span>
+<span><span class="co">## 5:   Vorinostat  Vincristine           0.10          0.010        1    A-498</span></span>
+<span><span class="co">## 6:   Vorinostat  Vincristine           0.10          0.100        1    A-498</span></span>
+<span><span class="co">## 7:   Vorinostat  Vincristine           1.00          0.001        1    A-498</span></span>
+<span><span class="co">## 8:   Vorinostat  Vincristine           1.00          0.010        1    A-498</span></span>
+<span><span class="co">## 9:   Vorinostat  Vincristine           1.00          0.100        1    A-498</span></span>
+<span><span class="co">##    bio_rep viability PERCENTGROWTH PERCENTGROWTHNOTZ EXPECTEDGROWTH TESTVALUE</span></span>
+<span><span class="co">## 1:       1 102.75610        103.80            102.76         98.008  10347840</span></span>
+<span><span class="co">## 2:       1  98.43368         97.84             98.43         95.060   9912560</span></span>
+<span><span class="co">## 3:       1  95.56624         93.89             95.57         94.044   9623800</span></span>
+<span><span class="co">## 4:       1  96.75627         95.53             96.76         96.756   9743640</span></span>
+<span><span class="co">## 5:       1  99.47754         99.28             99.48         93.845  10017680</span></span>
+<span><span class="co">## 6:       1  90.17732         86.46             90.18         92.843   9081120</span></span>
+<span><span class="co">## 7:       1  89.01946         84.86             89.02         80.854   8964520</span></span>
+<span><span class="co">## 8:       1  77.25336         68.63             77.25         78.421   7779640</span></span>
+<span><span class="co">## 9:       1  81.76644         74.86             81.77         77.583   8234120</span></span>
+<span><span class="co">##    CONTROLVALUE TZVALUE</span></span>
+<span><span class="co">## 1:     10070293 2767084</span></span>
+<span><span class="co">## 2:     10070293 2767084</span></span>
+<span><span class="co">## 3:     10070293 2767084</span></span>
+<span><span class="co">## 4:     10070293 2767084</span></span>
+<span><span class="co">## 5:     10070293 2767084</span></span>
+<span><span class="co">## 6:     10070293 2767084</span></span>
+<span><span class="co">## 7:     10070293 2767084</span></span>
+<span><span class="co">## 8:     10070293 2767084</span></span>
+<span><span class="co">## 9:     10070293 2767084</span></span></code></pre>
+<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">NCI_ALMANAC_tre</span><span class="op">[</span><span class="st">"Vorinostat:Vincristine"</span>, <span class="st">"A-498"</span><span class="op">]</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">assay</span><span class="op">(</span><span class="st">"response"</span>, withDimnames <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##    rowKey colKey viability PERCENTGROWTH PERCENTGROWTHNOTZ EXPECTEDGROWTH</span></span>
+<span><span class="co">## 1:      1      1 102.75610        103.80            102.76         98.008</span></span>
+<span><span class="co">## 2:      2      1  98.43368         97.84             98.43         95.060</span></span>
+<span><span class="co">## 3:      3      1  95.56624         93.89             95.57         94.044</span></span>
+<span><span class="co">## 4:      4      1  96.75627         95.53             96.76         96.756</span></span>
+<span><span class="co">## 5:      5      1  99.47754         99.28             99.48         93.845</span></span>
+<span><span class="co">## 6:      6      1  90.17732         86.46             90.18         92.843</span></span>
+<span><span class="co">## 7:      7      1  89.01946         84.86             89.02         80.854</span></span>
+<span><span class="co">## 8:      8      1  77.25336         68.63             77.25         78.421</span></span>
+<span><span class="co">## 9:      9      1  81.76644         74.86             81.77         77.583</span></span>
+<span><span class="co">##    TESTVALUE CONTROLVALUE TZVALUE</span></span>
+<span><span class="co">## 1:  10347840     10070293 2767084</span></span>
+<span><span class="co">## 2:   9912560     10070293 2767084</span></span>
+<span><span class="co">## 3:   9623800     10070293 2767084</span></span>
+<span><span class="co">## 4:   9743640     10070293 2767084</span></span>
+<span><span class="co">## 5:  10017680     10070293 2767084</span></span>
+<span><span class="co">## 6:   9081120     10070293 2767084</span></span>
+<span><span class="co">## 7:   8964520     10070293 2767084</span></span>
+<span><span class="co">## 8:   7779640     10070293 2767084</span></span>
+<span><span class="co">## 9:   8234120     10070293 2767084</span></span></code></pre>
+<p>In this case, the internal row and column keys are returned instead
+of translating them back into the rowID and colID identifers that we
+defined earlier.</p>
+<p>So far this has all been akin to syntactic sugar, giving us a more
+convenient way to run subsets that would be possible to do on the long
+format data.table we read in above. The real advantages of the
+<code>TRE</code> subsetting syntax will be more evident as we begin to
+analyze the data and create summaries later in this workshop, where it
+can then keep the raw and derived datasets ‘in sync’ as the object is
+sliced using the row and column IDs.</p>
 </div>
 <div class="section level4">
-<h4 id="computing-over-a-treatmentresponseexperiment">Computing Over a <code>TreatmentResponseExperiment</code><a class="anchor" aria-label="anchor" href="#computing-over-a-treatmentresponseexperiment"></a>
+<h4 id="computing-over-a-treatmentresponseexperiment">Computing over a <code>TreatmentResponseExperiment</code><a class="anchor" aria-label="anchor" href="#computing-over-a-treatmentresponseexperiment"></a>
 </h4>
 <p>So far we have seen how a <code>TRE</code> allows for flexible
 definitions of treatments and samples to enable storage of dose-response
@@ -1157,7 +1425,7 @@ allows arbitrary R functions to be applied over groups of identifiers
 within an assay. For example, we may want to take averages for all
 monotherapy viabilities over technical replicates. We can do so using
 the <code>aggregate</code> method as follows:</p>
-<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb50"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="op">(</span><span class="va">NCI_ALMANAC_tre</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span><span class="va">treatment2id</span> <span class="op">==</span> <span class="st">""</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/stats/aggregate.html" class="external-link">aggregate</a></span><span class="op">(</span></span>
@@ -1208,7 +1476,7 @@ taking the mean of the viability column and returned the results as
 <p>You can also customize your resulting column names by naming the
 aggregation arguments:</p>
 <p>For example:</p>
-<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb52"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="op">(</span><span class="va">NCI_ALMANAC_tre</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/stats/aggregate.html" class="external-link">aggregate</a></span><span class="op">(</span></span>
 <span>    subset<span class="op">=</span><span class="va">treatment2id</span> <span class="op">==</span> <span class="st">""</span>,</span>
@@ -1268,47 +1536,31 @@ become a column in the returned table.</p>
 sections.</p>
 </div>
 <div class="section level4">
-<h4 id="combining-with-omics-data-into-a-pharmacoset">Combining with Omics Data into a <code>PharmacoSet</code><a class="anchor" aria-label="anchor" href="#combining-with-omics-data-into-a-pharmacoset"></a>
+<h4 id="hands-on-with-a-treatmentresponseexperiment">Hands on with a <code>TreatmentResponseExperiment</code><a class="anchor" aria-label="anchor" href="#hands-on-with-a-treatmentresponseexperiment"></a>
 </h4>
-<p>The NCI-ALMANAC study did not conduct its own set of molecular
-profiling experiments, since the NCI60 already profiled all cell-lines
-available in the NCI-ALMANAC. We have already curated a
-<code>PharmacoSet</code> for <code>NCI60</code>, so adding our molecular
-data to the NCI-ALMANAC <code>PharmacoSet</code> requires no manual
-curation. We must simply subset the <code>NCI60</code> dataset to those
-cell-lines present in NCI-ALMANAC.</p>
-<p>Lets examine the included molecualr data:</p>
-<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">NCI60_molecular_data</span><span class="op">)</span></span>
-<span><span class="op">(</span><span class="va">NCI60_molecular_data</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## A MultiAssayExperiment object of 4 listed</span></span>
-<span><span class="co">##  experiments with user-defined names and respective classes.</span></span>
-<span><span class="co">##  Containing an ExperimentList class object of length 4:</span></span>
-<span><span class="co">##  [1] rna: RangedSummarizedExperiment with 54609 rows and 59 columns</span></span>
-<span><span class="co">##  [2] mirna: RangedSummarizedExperiment with 417 rows and 59 columns</span></span>
-<span><span class="co">##  [3] rnaseq.comp: RangedSummarizedExperiment with 23808 rows and 59 columns</span></span>
-<span><span class="co">##  [4] rnaseq.iso: RangedSummarizedExperiment with 23808 rows and 59 columns</span></span>
-<span><span class="co">## Functionality:</span></span>
-<span><span class="co">##  experiments() - obtain the ExperimentList instance</span></span>
-<span><span class="co">##  colData() - the primary/phenotype DataFrame</span></span>
-<span><span class="co">##  sampleMap() - the sample coordination DataFrame</span></span>
-<span><span class="co">##  `$`, `[`, `[[` - extract colData columns, subset, or experiment</span></span>
-<span><span class="co">##  *Format() - convert into a long or wide DataFrame</span></span>
-<span><span class="co">##  assays() - convert ExperimentList to a SimpleList of matrices</span></span>
-<span><span class="co">##  exportClass() - save data to flat files</span></span></code></pre>
-<p>We can see the molecular data is available as
-<code>MultiAssayExperiment</code> containing four
-<code>RangedSummarizedExperiment</code> objects. The molecular data
-types are:</p>
+<p>To practice working with <code>TreatmentResponseExperiment</code>
+objects, we will try to answer 3 questions:</p>
 <ol style="list-style-type: decimal">
-<li>“rna” represents RNA expression microarray data.</li>
-<li>“mirna” represents microRNA expression data.</li>
-<li>“rnaseq.comp” contains RNA sequencing data.</li>
-<li>“rnaseq.iso” is RNA sequencing data specifically targeting
-transcript isoforms.</li>
+<li>How many drug combinations were tested involving Paclitaxel as one
+of the two compounds?</li>
+<li>Which cell line was most sensitive (on average across
+concentrations) to co-treatment with Vincristine and Vorinostat?</li>
+<li>Are there any biological replicates for drug combination experiments
+in the dataset?</li>
 </ol>
-<p>Once we have our <code>MultiAssayExperiment</code> and
-<code>TreatmentResponseExperiment</code> objects ready, we next have to
+</div>
+</div>
+<div class="section level3">
+<h3 id="combining-with-omics-data-into-a-pharmacoset">Combining with Omics Data into a <code>PharmacoSet</code><a class="anchor" aria-label="anchor" href="#combining-with-omics-data-into-a-pharmacoset"></a>
+</h3>
+<p>We had already loaded the molecular data from the NCI-60 above, and
+prior to this workshop we curated the cellids to match between the
+datasets, so adding our molecular data to the NCI-ALMANAC
+<code>PharmacoSet</code> requires no manual curation. We must simply
+subset the <code>NCI60</code> dataset to those cell-lines present in
+NCI-ALMANAC.</p>
+<p>Since we have our <code>MultiAssayExperiment</code> and
+<code>TreatmentResponseExperiment</code> objects ready, we only need to
 extract and curate sample and treatment metadata tables which store a
 summary of metadata for available samples and treatments in our
 <code>PharmacoSet</code> object.</p>
@@ -1319,169 +1571,66 @@ a set of standardized annotations from sources like PubChem or ChEMBL
 for treatments and Cellosaurus for cancer cell-lines and using these to
 standardize identifiers in your data as well as adding links to
 additional information in external databases.</p>
-<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb54"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">NCI_ALMANAC_sample_metadata</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">NCI_ALMANAC_sample_metadata</span><span class="op">)</span></span></code></pre></div>
-<table class="table">
-<colgroup>
-<col width="5%">
-<col width="5%">
-<col width="5%">
-<col width="32%">
-<col width="9%">
-<col width="13%">
-<col width="17%">
-<col width="10%">
-</colgroup>
-<thead><tr class="header">
-<th align="left"></th>
-<th align="left">sampleid</th>
-<th align="left">tissueid</th>
-<th align="left">cellosaurus_disease</th>
-<th align="left">cellosaurus_id</th>
-<th align="left">NCI_ALMANAC.sampleid</th>
-<th align="left">NCI_ALMANAC.disease</th>
-<th align="left">pharmacodb_cid</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="left">786-O</td>
-<td align="left">786-O</td>
-<td align="left">Kidney</td>
-<td align="left">Renal cell carcinoma</td>
-<td align="left">CVCL_1051</td>
-<td align="left">786-0</td>
-<td align="left">Renal Cancer</td>
-<td align="left">7860_28_2019</td>
-</tr>
-<tr class="even">
-<td align="left">A-498</td>
-<td align="left">A-498</td>
-<td align="left">Kidney</td>
-<td align="left">Renal cell carcinoma</td>
-<td align="left">CVCL_1056</td>
-<td align="left">A498</td>
-<td align="left">Renal Cancer</td>
-<td align="left">A498_47_2019</td>
-</tr>
-<tr class="odd">
-<td align="left">A-549</td>
-<td align="left">A-549</td>
-<td align="left">Lung</td>
-<td align="left">Lung adenocarcinoma</td>
-<td align="left">CVCL_0023</td>
-<td align="left">A549/ATCC</td>
-<td align="left">Non-Small Cell Lung Cancer</td>
-<td align="left">A549_48_2019</td>
-</tr>
-<tr class="even">
-<td align="left">ACHN</td>
-<td align="left">ACHN</td>
-<td align="left">Kidney</td>
-<td align="left">Papillary renal cell carcinoma</td>
-<td align="left">CVCL_1067</td>
-<td align="left">ACHN</td>
-<td align="left">Renal Cancer</td>
-<td align="left">ACHN_54_2019</td>
-</tr>
-<tr class="odd">
-<td align="left">BT-549</td>
-<td align="left">BT-549</td>
-<td align="left">Breast</td>
-<td align="left">Invasive ductal carcinoma, not otherwise specified</td>
-<td align="left">CVCL_1092</td>
-<td align="left">BT-549</td>
-<td align="left">Breast Cancer</td>
-<td align="left">BT549_111_2019</td>
-</tr>
-<tr class="even">
-<td align="left">CCRF-CEM</td>
-<td align="left">CCRF-CEM</td>
-<td align="left">Lymphoid</td>
-<td align="left">Childhood T acute lymphoblastic leukemia</td>
-<td align="left">CVCL_0207</td>
-<td align="left">CCRF-CEM</td>
-<td align="left">Leukemia</td>
-<td align="left">CCRFCEM_190_2019</td>
-</tr>
-</tbody>
-</table>
+<pre><code><span><span class="co">##          sampleid tissueid                                cellosaurus_disease</span></span>
+<span><span class="co">## 786-O       786-O   Kidney                               Renal cell carcinoma</span></span>
+<span><span class="co">## A-498       A-498   Kidney                               Renal cell carcinoma</span></span>
+<span><span class="co">## A-549       A-549     Lung                                Lung adenocarcinoma</span></span>
+<span><span class="co">## ACHN         ACHN   Kidney                     Papillary renal cell carcinoma</span></span>
+<span><span class="co">## BT-549     BT-549   Breast Invasive ductal carcinoma, not otherwise specified</span></span>
+<span><span class="co">## CCRF-CEM CCRF-CEM Lymphoid           Childhood T acute lymphoblastic leukemia</span></span>
+<span><span class="co">##          cellosaurus_id NCI_ALMANAC.sampleid        NCI_ALMANAC.disease</span></span>
+<span><span class="co">## 786-O         CVCL_1051                786-0               Renal Cancer</span></span>
+<span><span class="co">## A-498         CVCL_1056                 A498               Renal Cancer</span></span>
+<span><span class="co">## A-549         CVCL_0023            A549/ATCC Non-Small Cell Lung Cancer</span></span>
+<span><span class="co">## ACHN          CVCL_1067                 ACHN               Renal Cancer</span></span>
+<span><span class="co">## BT-549        CVCL_1092               BT-549              Breast Cancer</span></span>
+<span><span class="co">## CCRF-CEM      CVCL_0207             CCRF-CEM                   Leukemia</span></span>
+<span><span class="co">##            pharmacodb_cid</span></span>
+<span><span class="co">## 786-O        7860_28_2019</span></span>
+<span><span class="co">## A-498        A498_47_2019</span></span>
+<span><span class="co">## A-549        A549_48_2019</span></span>
+<span><span class="co">## ACHN         ACHN_54_2019</span></span>
+<span><span class="co">## BT-549     BT549_111_2019</span></span>
+<span><span class="co">## CCRF-CEM CCRFCEM_190_2019</span></span></code></pre>
 <p>The above table contains the sample metadata which will comprise the
 <code>@sample</code> slot of our <code>PharmacoSet</code>. It contains a
 set of standardized identifiers including <code>cellid</code> and
 <code>tissueid</code>, as well as cell-line identifiers from the
 NCI-ALMANAC publication and some additional metadata we have added.</p>
-<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb56"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">NCI_ALMANAC_treatment_metadata</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">NCI_ALMANAC_treatment_metadata</span><span class="op">)</span></span></code></pre></div>
-<table class="table">
-<colgroup>
-<col width="14%">
-<col width="14%">
-<col width="9%">
-<col width="3%">
-<col width="46%">
-<col width="11%">
-</colgroup>
-<thead><tr class="header">
-<th align="left"></th>
-<th align="left">treatmentid</th>
-<th align="left">NCI_ALMANAC.treatmentid</th>
-<th align="right">cid</th>
-<th align="left">smiles</th>
-<th align="left">inchikey</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="left">Pralatrexate</td>
-<td align="left">Pralatrexate</td>
-<td align="left">pralatrexate</td>
-<td align="right">148121</td>
-<td align="left">C#CCC(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)NC(CCC(=O)O)C(=O)O</td>
-<td align="left">OGSBUKJUDHAQEA-WMCAAGNKSA-N</td>
-</tr>
-<tr class="even">
-<td align="left">1,3-Bis(2-chloroethyl)-1-nitrosourea</td>
-<td align="left">1,3-Bis(2-chloroethyl)-1-nitrosourea</td>
-<td align="left">Carmustine</td>
-<td align="right">2578</td>
-<td align="left">C(CCl)NC(=O)N(CCCl)N=O</td>
-<td align="left">DLGOEMSEDOSKAD-UHFFFAOYSA-N</td>
-</tr>
-<tr class="odd">
-<td align="left">Ixabepilone</td>
-<td align="left">Ixabepilone</td>
-<td align="left">Ixabepilone</td>
-<td align="right">6445540</td>
-<td align="left">CC1CCCC2(C(O2)CC(NC(=O)CC(C(C(=O)C(C1O)C)(C)C)O)C(=CC3=CSC(=N3)C)C)C</td>
-<td align="left">FABUFPQFXZVHFB-PVYNADRNSA-N</td>
-</tr>
-<tr class="even">
-<td align="left">Clofarabine</td>
-<td align="left">Clofarabine</td>
-<td align="left">Clofarabine</td>
-<td align="right">119182</td>
-<td align="left">Nc1nc(Cl)nc2n(cnc12)C3OC(CO)C(O)C3F</td>
-<td align="left">WDDPHFBMKLOVOX-UHFFFAOYSA-N</td>
-</tr>
-<tr class="odd">
-<td align="left">Dasatinib</td>
-<td align="left">Dasatinib</td>
-<td align="left">Dasatinib</td>
-<td align="right">3062316</td>
-<td align="left">CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=NC(=NC(=C3)N4CCN(CC4)CCO)C</td>
-<td align="left">ZBNZXTGUTAYRHI-UHFFFAOYSA-N</td>
-</tr>
-<tr class="even">
-<td align="left">Vincristine</td>
-<td align="left">Vincristine</td>
-<td align="left">Vincristine sulfate</td>
-<td align="right">5978</td>
-<td align="left">CCC1(O)CC2CN(C1)CCc3c([nH]c4ccccc34)C(C2)(C(=O)OC)c5cc6c(cc5OC)N(C=O)C7C86CCN9CC=CC(CC)(C98)C(C(=O)OC)C7(O)C(=O)OC</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
+<pre><code><span><span class="co">##                                                               treatmentid</span></span>
+<span><span class="co">## Pralatrexate                                                 Pralatrexate</span></span>
+<span><span class="co">## 1,3-Bis(2-chloroethyl)-1-nitrosourea 1,3-Bis(2-chloroethyl)-1-nitrosourea</span></span>
+<span><span class="co">## Ixabepilone                                                   Ixabepilone</span></span>
+<span><span class="co">## Clofarabine                                                   Clofarabine</span></span>
+<span><span class="co">## Dasatinib                                                       Dasatinib</span></span>
+<span><span class="co">## Vincristine                                                   Vincristine</span></span>
+<span><span class="co">##                                      NCI_ALMANAC.treatmentid     cid</span></span>
+<span><span class="co">## Pralatrexate                                    pralatrexate  148121</span></span>
+<span><span class="co">## 1,3-Bis(2-chloroethyl)-1-nitrosourea              Carmustine    2578</span></span>
+<span><span class="co">## Ixabepilone                                      Ixabepilone 6445540</span></span>
+<span><span class="co">## Clofarabine                                      Clofarabine  119182</span></span>
+<span><span class="co">## Dasatinib                                          Dasatinib 3062316</span></span>
+<span><span class="co">## Vincristine                              Vincristine sulfate    5978</span></span>
+<span><span class="co">##                                                                                                                                                  smiles</span></span>
+<span><span class="co">## Pralatrexate                                                                    C#CCC(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)NC(CCC(=O)O)C(=O)O</span></span>
+<span><span class="co">## 1,3-Bis(2-chloroethyl)-1-nitrosourea                                                                                             C(CCl)NC(=O)N(CCCl)N=O</span></span>
+<span><span class="co">## Ixabepilone                                                                        CC1CCCC2(C(O2)CC(NC(=O)CC(C(C(=O)C(C1O)C)(C)C)O)C(=CC3=CSC(=N3)C)C)C</span></span>
+<span><span class="co">## Clofarabine                                                                                                         Nc1nc(Cl)nc2n(cnc12)C3OC(CO)C(O)C3F</span></span>
+<span><span class="co">## Dasatinib                                                                             CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=NC(=NC(=C3)N4CCN(CC4)CCO)C</span></span>
+<span><span class="co">## Vincristine                          CCC1(O)CC2CN(C1)CCc3c([nH]c4ccccc34)C(C2)(C(=O)OC)c5cc6c(cc5OC)N(C=O)C7C86CCN9CC=CC(CC)(C98)C(C(=O)OC)C7(O)C(=O)OC</span></span>
+<span><span class="co">##                                                         inchikey</span></span>
+<span><span class="co">## Pralatrexate                         OGSBUKJUDHAQEA-WMCAAGNKSA-N</span></span>
+<span><span class="co">## 1,3-Bis(2-chloroethyl)-1-nitrosourea DLGOEMSEDOSKAD-UHFFFAOYSA-N</span></span>
+<span><span class="co">## Ixabepilone                          FABUFPQFXZVHFB-PVYNADRNSA-N</span></span>
+<span><span class="co">## Clofarabine                          WDDPHFBMKLOVOX-UHFFFAOYSA-N</span></span>
+<span><span class="co">## Dasatinib                            ZBNZXTGUTAYRHI-UHFFFAOYSA-N</span></span>
+<span><span class="co">## Vincristine</span></span></code></pre>
 <p>Similar to the sample table, this one contains treatment metadata
 which will be assigned to the <code>@treatment</code> slot of our
 <code>PharmacoSet</code>. It also contains a set of standardized
@@ -1492,7 +1641,7 @@ from the NCI-ALMANAC publication.</p>
 identifiers to dataset specific identifiers and store those separately
 to ensure these associations are not lost should the treatment or sample
 metadata tables be modified.</p>
-<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb58"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">curation</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
 <span>  sample<span class="op">=</span><span class="va">NCI_ALMANAC_sample_metadata</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"sampleid"</span>, <span class="st">"NCI_ALMANAC.sampleid"</span><span class="op">)</span><span class="op">]</span>,</span>
 <span>  treatment<span class="op">=</span><span class="va">NCI_ALMANAC_treatment_metadata</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"treatmentid"</span>, <span class="st">"NCI_ALMANAC.treatmentid"</span><span class="op">)</span><span class="op">]</span>,</span>
@@ -1510,14 +1659,13 @@ requirements for the object such as a <code>MultiAssayExperiment</code>
 for the molecular profiles slot and a
 <code>TreatmentResponseExperiment</code> for treatment response slot.
 The original constructor is still included in the package for backwards
-compatibility but will be retired after we finish updating all our
-existing datasets on ORCESTRA.ca.</p>
+compatibility but will be deprecated in a future release.</p>
 <p>If you have an old style <code>PharmacoSet</code> but want to use the
 new package features, simply call <code>updateObject</code> to return
 the dataset with an updated class structure. This method will be
 available in all future releases to ensure datasets can be updated and
 reused regardless of their age.</p>
-<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb59"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="op">(</span><span class="va">NCI_ALMANAC_2017</span> <span class="op">&lt;-</span> <span class="fu">PharmacoSet2</span><span class="op">(</span></span>
 <span>  name<span class="op">=</span><span class="st">"NCI_ALMANAC_2017"</span>,</span>
 <span>  molecularProfiles<span class="op">=</span><span class="va">NCI60_molecular_data</span>,</span>
@@ -1528,16 +1676,15 @@ reused regardless of their age.</p>
 <span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## &lt;PharmacoSet&gt;</span></span>
 <span><span class="co">## Name:  NCI_ALMANAC_2017 </span></span>
-<span><span class="co">## Date Created:  Fri Aug  5 23:52:07 2022 </span></span>
+<span><span class="co">## Date Created:  Tue May  9 13:46:10 2023 </span></span>
 <span><span class="co">## Number of samples:  60 </span></span>
 <span><span class="co">## Molecular profiles:</span></span>
-<span><span class="co">##    A MultiAssayExperiment object of 4 listed</span></span>
+<span><span class="co">##    A MultiAssayExperiment object of 3 listed</span></span>
 <span><span class="co">##    experiments with user-defined names and respective classes.</span></span>
-<span><span class="co">##    Containing an ExperimentList class object of length 4:</span></span>
+<span><span class="co">##    Containing an ExperimentList class object of length 3:</span></span>
 <span><span class="co">##    [1] rna: RangedSummarizedExperiment with 54609 rows and 59 columns</span></span>
 <span><span class="co">##    [2] mirna: RangedSummarizedExperiment with 417 rows and 59 columns</span></span>
-<span><span class="co">##    [3] rnaseq.comp: RangedSummarizedExperiment with 23808 rows and 59 columns</span></span>
-<span><span class="co">##    [4] rnaseq.iso: RangedSummarizedExperiment with 23808 rows and 59 columns </span></span>
+<span><span class="co">##    [3] rnaseq.comp: RangedSummarizedExperiment with 23808 rows and 59 columns </span></span>
 <span><span class="co">## Treatment response:</span></span>
 <span><span class="co">##    <span style="color: #BBBB00; font-weight: bold; font-style: italic;">&lt;TreatmentResponseExperiment&gt; </span></span></span>
 <span><span class="co"><span style="color: #BBBB00; font-weight: bold; font-style: italic;">##   </span><span style="color: #BBBB00; font-weight: bold;">dim:  10080 62 </span></span></span>
@@ -1552,7 +1699,6 @@ and are ready to use it to answer interesting research questions and
 discover the relationship between molecular phenotypes and treatment
 response!</p>
 <hr>
-</div>
 </div>
 </div>
 <div class="section level2">
@@ -1577,7 +1723,7 @@ minimum observed viability.</p>
 interchangebly in the literature. Precisely, dose-response curves for a
 cell kiling screen would plot % cell death against dose, leading to an
 increasing sigmoid curve.</em></p>
-<p>In <em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>,
+<p>In <em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>,
 we use the 3 Parameter Hill Curve function as our model of drug response
 in cancer cell lines:</p>
 <p><span class="math display">\[y = E_\infty + \frac{1-E_\infty}{1 +
@@ -1600,7 +1746,7 @@ which values less than 1 imply negative cooperativity/antagonism.</p>
 <p>PharmacoGx provides functions to both fit and visualize
 dose-viability curves. Plotting dose-viability data is easy using the
 <code>drugDoseResponseCurve</code> function:</p>
-<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb61"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">concentrations</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="fl">1</span> <span class="op">/</span> <span class="fl">2</span><span class="op">)</span><span class="op">^</span><span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">8</span><span class="op">)</span> <span class="op">*</span> <span class="fl">1</span></span>
 <span><span class="va">viabilities</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.1</span>, <span class="fl">5</span>, <span class="fl">15</span>, <span class="fl">23.8</span>, <span class="fl">55.2</span>, <span class="fl">85.9</span>, <span class="fl">96.9</span>, <span class="fl">98.4</span>, <span class="fl">99.2</span><span class="op">)</span></span>
 <span></span>
@@ -1613,7 +1759,7 @@ dose-viability curves. Plotting dose-viability data is easy using the
 <p>Similarly, fitting Log-Logistic models to data is simple using the
 <code>logLogisticRegression</code> function in
 <code>PharmacoGx</code>.</p>
-<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb62"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">concentrations</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="fl">1</span> <span class="op">/</span> <span class="fl">2</span><span class="op">)</span><span class="op">^</span><span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">8</span><span class="op">)</span> <span class="op">*</span> <span class="fl">1</span></span>
 <span><span class="va">viabilities</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.1</span>, <span class="fl">5</span>, <span class="fl">15</span>, <span class="fl">23.8</span>, <span class="fl">55.2</span>, <span class="fl">85.9</span>, <span class="fl">96.9</span>, <span class="fl">98.4</span>, <span class="fl">99.2</span><span class="op">)</span></span>
 <span></span>
@@ -1658,13 +1804,13 @@ dose-response curve</p>
 quantifying the observed drug sensitivity. If you noticed above, the
 <code>drugDoseResponseCurve</code> function computes them by default. In
 PharmacoGx, they can be computed manually as follows:</p>
-<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb64"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">concentrations</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="fl">1</span> <span class="op">/</span> <span class="fl">2</span><span class="op">)</span><span class="op">^</span><span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">8</span><span class="op">)</span> <span class="op">*</span> <span class="fl">1</span></span>
 <span><span class="va">viabilities</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.1</span>, <span class="fl">5</span>, <span class="fl">15</span>, <span class="fl">23.8</span>, <span class="fl">55.2</span>, <span class="fl">85.9</span>, <span class="fl">96.9</span>, <span class="fl">98.4</span>, <span class="fl">99.2</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">PharmacoGx</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/PharmacoGx/man/computeAUC.html" class="external-link">computeAUC</a></span><span class="op">(</span>concentration <span class="op">=</span> <span class="va">concentrations</span>, viability <span class="op">=</span> <span class="va">viabilities</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## [1] 46.63697</span></span></code></pre>
-<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb66"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">PharmacoGx</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/PharmacoGx/man/computeICn.html" class="external-link">computeIC50</a></span><span class="op">(</span>concentration <span class="op">=</span> <span class="va">concentrations</span>, viability <span class="op">=</span> <span class="va">viabilities</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## [1] 0.0713488</span></span></code></pre>
 <p>If measurements are passed into these function, the Log Logistic
@@ -1672,14 +1818,14 @@ model is fit to compute the IC50 and AAC. Clearly, if multiple metrics
 are being computed, redoing the fit is inefficent. Therefore, these
 functions can also take parameters fit by
 <code>logLogisticRegression</code>.</p>
-<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb68"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">concentrations</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="fl">1</span> <span class="op">/</span> <span class="fl">2</span><span class="op">)</span><span class="op">^</span><span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">8</span><span class="op">)</span> <span class="op">*</span> <span class="fl">1</span></span>
 <span><span class="va">viabilities</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.1</span>, <span class="fl">5</span>, <span class="fl">15</span>, <span class="fl">23.8</span>, <span class="fl">55.2</span>, <span class="fl">85.9</span>, <span class="fl">96.9</span>, <span class="fl">98.4</span>, <span class="fl">99.2</span><span class="op">)</span></span>
 <span><span class="va">pars</span> <span class="op">&lt;-</span> <span class="fu">logLogisticRegression</span><span class="op">(</span>conc <span class="op">=</span> <span class="va">concentrations</span>, viability <span class="op">=</span> <span class="va">viabilities</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">PharmacoGx</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/PharmacoGx/man/computeAUC.html" class="external-link">computeAUC</a></span><span class="op">(</span>concentration <span class="op">=</span> <span class="va">concentrations</span>, Hill_fit <span class="op">=</span> <span class="va">pars</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## [1] 46.63697</span></span></code></pre>
-<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb70"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">PharmacoGx</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/PharmacoGx/man/computeICn.html" class="external-link">computeIC50</a></span><span class="op">(</span>concentration <span class="op">=</span> <span class="va">concentrations</span>, Hill_fit <span class="op">=</span> <span class="va">pars</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## [1] 0.0713488</span></span></code></pre>
 <p>As processsing monotherapy data is often a step in preparing for
@@ -1751,7 +1897,7 @@ TreatmentResponseExperiment API.</p>
 the monotherapy data may need to be preprocessed. In our case, the
 dataset we are using has replicate experiments for the monotherapy
 curves, as seen below:</p>
-<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb72"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">treatmentResponse</span><span class="op">(</span><span class="va">NCI_ALMANAC_2017</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span><span class="va">treatment2id</span> <span class="op">==</span> <span class="st">""</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/stats/aggregate.html" class="external-link">aggregate</a></span><span class="op">(</span></span>
@@ -1774,7 +1920,7 @@ the <code>by</code> argument to compute an aggregation over each unique
 combination of <code>treatment1id</code>, <code>treatment1dose</code>,
 <code>sampleid</code> and <code>bio_rep</code> (summarizing over
 technical replicates).</p>
-<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb73"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">NCI_TRE</span> <span class="op">&lt;-</span> <span class="fu">treatmentResponse</span><span class="op">(</span><span class="va">NCI_ALMANAC_2017</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># -- Extract and summarize monotherapy data, defined by an absent treatment2id</span></span>
@@ -1818,7 +1964,7 @@ values.</p>
 <code>E_inf</code> parameter on a percentage scale when the input data
 is on a percentage scale. We convert to a fraction scale because that
 makes the subsequent calculations simpler.</p>
-<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb75"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># -- Fit the Hill curve model to monotherapy drugs and compute associated metrics</span></span>
 <span><span class="va">NCI_TRE</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">endoaggregate</span><span class="op">(</span></span>
@@ -1869,7 +2015,7 @@ table.</p>
 <p><em>The <code>mergeAssays</code> is built on top of R’s merge
 function (actually, merge from <code>data.table</code>), and therefore
 accepts the same arguments to control how the merge is done.</em></p>
-<div class="sourceCode" id="cb50"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb77"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># -- Attach the Hill parameters from the monotherapy profiles to the combination data</span></span>
 <span><span class="co"># Extract the monotherapy fits</span></span>
 <span><span class="va">NCI_TRE</span> <span class="op">|&gt;</span></span>
@@ -1892,7 +2038,7 @@ accepts the same arguments to control how the merge is done.</em></p>
 <span>    x<span class="op">=</span><span class="st">"combo_response"</span>,</span>
 <span>    y<span class="op">=</span><span class="st">"mono_fits"</span>,</span>
 <span>    by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"treatment1id"</span>, <span class="st">"sampleid"</span>, <span class="st">"bio_rep"</span><span class="op">)</span>,</span>
-<span>    sort <span class="op">=</span> <span class="cn">FALSE</span> <span class="co"># workaround to not have weird DT keys as a result.</span></span>
+<span>    sort <span class="op">=</span> <span class="cn">FALSE</span> <span class="co"># Don't sort to avoid reordering and re-keying the data</span></span>
 <span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">mergeAssays</span><span class="op">(</span></span>
 <span>    x<span class="op">=</span><span class="st">"combo_response"</span>,</span>
@@ -1900,7 +2046,7 @@ accepts the same arguments to control how the merge is done.</em></p>
 <span>    by.x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"treatment2id"</span>, <span class="st">"sampleid"</span>, <span class="st">"bio_rep"</span><span class="op">)</span>,</span>
 <span>    by.y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"treatment1id"</span>, <span class="st">"sampleid"</span>, <span class="st">"bio_rep"</span><span class="op">)</span>,</span>
 <span>    suffixes <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"_1"</span>, <span class="st">"_2"</span><span class="op">)</span>,</span>
-<span>    sort <span class="op">=</span> <span class="cn">FALSE</span> <span class="co"># workaround to not have weird DT keys as a result.</span></span>
+<span>    sort <span class="op">=</span> <span class="cn">FALSE</span> <span class="co"># Don't sort to avoid reordering and re-keying the data</span></span>
 <span>  <span class="op">)</span> <span class="op">-&gt;</span></span>
 <span>  <span class="va">NCI_TRE</span></span>
 <span><span class="op">(</span><span class="va">NCI_TRE</span><span class="op">$</span><span class="va">combo_response</span><span class="op">)</span></span></code></pre></div>
@@ -1959,7 +2105,7 @@ accepts the same arguments to control how the merge is done.</em></p>
 <span><span class="co">##      4: 1158169 1.0000000 0.01729107  50.000000    1 0.2172949  3.00000000</span></span>
 <span><span class="co">##      5: 1863442 1.0000000 0.12852970  50.000000    1 0.2407407  3.00000000</span></span>
 <span><span class="co">##     ---                                                                   </span></span>
-<span><span class="co">## 127310:  894742 1.0000000 0.17711243   2.000000    4 0.1928162  0.01523481</span></span>
+<span><span class="co">## 127310:  894742 1.0000000 0.17711243   2.000000    4 0.1928192  0.01523461</span></span>
 <span><span class="co">## 127311: 2235554 1.0000000 0.07429719   1.000000    1 0.4680214  0.03000000</span></span>
 <span><span class="co">## 127312: 1502784 4.0000000 0.36282782   1.429975    1 0.4751067  0.03000000</span></span>
 <span><span class="co">## 127313: 6146751 0.9672031 0.26448079   1.146777    1 0.5252780  0.03000000</span></span>
@@ -1969,7 +2115,7 @@ doses using the corresponding fit parameters and the Hill Curve models.
 This step is necessary when interpolating between monotherapy doses, but
 is often done in any case, as the predicted viabilities can be less
 noisy than each individual monotherapy measurement.</p>
-<div class="sourceCode" id="cb52"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb79"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># predict viability at the combo doses from the Hill curves fit to monotherapy data</span></span>
 <span><span class="va">NCI_TRE</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">endoaggregate</span><span class="op">(</span></span>
@@ -1994,7 +2140,7 @@ noisy than each individual monotherapy measurement.</p>
 <span>  <span class="op">)</span> <span class="op">-&gt;</span> <span class="va">NCI_TRE</span></span></code></pre></div>
 <p>Last, we also put the measured combination viabilily onto a
 fractional, not percentage scale.</p>
-<div class="sourceCode" id="cb53"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb80"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">NCI_TRE</span><span class="op">$</span><span class="va">combo_response</span><span class="op">$</span><span class="va">viability</span> <span class="op">&lt;-</span></span>
 <span>  <span class="va">NCI_TRE</span><span class="op">$</span><span class="va">combo_response</span><span class="op">$</span><span class="va">viability</span> <span class="op">/</span> <span class="fl">100</span></span></code></pre></div>
 <p>Finally, we can talk about the different models to compute the
@@ -2024,7 +2170,7 @@ very weak baseline from which to compute synergy.</p>
 </h4>
 <p>As one can imagine, this is very simple to do using the
 <code>min</code> or <code>max</code> functions in R.</p>
-<div class="sourceCode" id="cb54"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb81"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># -- compute our drug synergy metrics</span></span>
 <span><span class="va">NCI_TRE</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">endoaggregate</span><span class="op">(</span></span>
@@ -2121,7 +2267,7 @@ effective than expected.</p>
 </h4>
 <p>This is also quite simple to do, as we just use the product of the
 monotherapy viabilities.</p>
-<div class="sourceCode" id="cb56"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb83"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># -- compute our drug synergy metrics</span></span>
 <span><span class="va">NCI_TRE</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">endoaggregate</span><span class="op">(</span></span>
@@ -2246,7 +2392,7 @@ index can be computed to assess synergy or antagonism directly
 requires solving a non-linear implicitly defined equation. PharmacoGx
 provides the <code>computeLoewe</code> function to do this
 calculation.</p>
-<div class="sourceCode" id="cb58"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb85"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># -- compute our drug synergy metrics</span></span>
 <span><span class="va">NCI_TRE</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">endoaggregate</span><span class="op">(</span></span>
@@ -2304,7 +2450,7 @@ calculation.</p>
 </div>
 </div>
 <div class="section level3">
-<h3 id="bonus-zip">BONUS: ZIP<a class="anchor" aria-label="anchor" href="#bonus-zip"></a>
+<h3 id="zero-interaction-potency">Zero Interaction Potency<a class="anchor" aria-label="anchor" href="#zero-interaction-potency"></a>
 </h3>
 <p>The Zero interaction Potency model was recently introduced with the
 goal of capturing the ideas behind both the Bliss and Loewe assumptions.
@@ -2355,7 +2501,7 @@ of the drugs as the “main drug”:</p>
 \]</span></p>
 <p>For more information on the ZIP model, we refer the reader to the
 original publication <span class="citation">(Yadav et al. 2015)</span>.
-Alternatively, the <em><a href="https://bioconductor.org/packages/3.16/synergyfinder" class="external-link">synergyfinder</a></em>
+Alternatively, the <em><a href="https://bioconductor.org/packages/3.18/synergyfinder" class="external-link">synergyfinder</a></em>
 package contains vignettes and the reference implementation for ZIP
 calculations.</p>
 </div>
@@ -2413,7 +2559,7 @@ reference.</p>
 from the Bliss predicted value for downstream analysis.</p>
 <p><em>Note that we also skip the ZIP delta score computation in the
 interest of time.</em></p>
-<div class="sourceCode" id="cb60"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb87"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># -- compute combination index and score</span></span>
 <span><span class="va">NCI_TRE</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">endoaggregate</span><span class="op">(</span></span>
@@ -2472,7 +2618,7 @@ drugs, Mitotane and Paclitaxel, on the A-549 cell line. If we recall the
 formula for the Bliss score above, we took <span class="math inline">\(v_{model} - v_c\)</span>, meaning that in this
 case, negative numbers indicate antagonism, as there is more viability
 observed than expected.</p>
-<div class="sourceCode" id="cb62"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb89"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">combo_scores</span><span class="op">[</span></span>
@@ -2513,7 +2659,7 @@ a narrow dose range, the most extreme deviation from the reference
 metrics) may instead be more appropriate.</p>
 <p>For our demo, we will summarize the combination profiles we have
 calculated into a Mean Bliss Score per experiment.</p>
-<div class="sourceCode" id="cb63"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb90"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="op">(</span><span class="va">NCI_TRE</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/stats/aggregate.html" class="external-link">aggregate</a></span><span class="op">(</span></span>
 <span>    Mean_Bliss <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">Bliss_score</span><span class="op">)</span>,</span>
@@ -2528,7 +2674,7 @@ calculated into a Mean Bliss Score per experiment.</p>
 <span><span class="co">##     4: 1,3-Bis(2-chloroethyl)-1-nitrosourea  Azacitidine     ACHN -0.039941211</span></span>
 <span><span class="co">##     5: 1,3-Bis(2-chloroethyl)-1-nitrosourea  Azacitidine CCRF-CEM -0.018621532</span></span>
 <span><span class="co">##    ---                                                                        </span></span>
-<span><span class="co">## 14142:                           Vorinostat  Vincristine       SR  0.170580816</span></span>
+<span><span class="co">## 14142:                           Vorinostat  Vincristine       SR  0.170580191</span></span>
 <span><span class="co">## 14143:                           Vorinostat  Vincristine    SW620 -0.078155666</span></span>
 <span><span class="co">## 14144:                           Vorinostat  Vincristine    T-47D -0.006124021</span></span>
 <span><span class="co">## 14145:                           Vorinostat  Vincristine UACC-257 -0.025048742</span></span>
@@ -2539,7 +2685,7 @@ calculated into a Mean Bliss Score per experiment.</p>
 <h2 id="biomarker-discovery">Biomarker Discovery:<a class="anchor" aria-label="anchor" href="#biomarker-discovery"></a>
 </h2>
 <div class="section level3">
-<h3 id="monotherapy-response">Monotherapy response<a class="anchor" aria-label="anchor" href="#monotherapy-response"></a>
+<h3 id="monotherapy-response">Monotherapy Response<a class="anchor" aria-label="anchor" href="#monotherapy-response"></a>
 </h3>
 <p>PharmacoGx makes an initial analysis for univariate biomarker
 discovery very simple, by providing the <code>drugSensitivitySig</code>
@@ -2575,7 +2721,7 @@ regular asymptotic formulas for inferring significance.</li>
 won’t be demonstrating the usage of <code>drugSensitivitySig</code> to
 compute monotherapy associations with drug response. Rather, we skip
 directly to computing associations with drug synergy. An example of
-monotherapy analysis can be found in the <em><a href="https://bioconductor.org/packages/3.16/PharmacoGx" class="external-link">PharmacoGx</a></em>
+monotherapy analysis can be found in the <em><a href="https://bioconductor.org/packages/3.18/PharmacoGx" class="external-link">PharmacoGx</a></em>
 vignette: <code>vignette("PharmacoGx")</code>.</p>
 </div>
 <div class="section level3">
@@ -2587,7 +2733,7 @@ each drug combination and cell line.</p>
 <p>Above, we had already summarized our synergy surfaces into a single
 mean value for each experiment. Now, we need to reshape the “long”
 format table into a table of drug combinations x cell lines.</p>
-<div class="sourceCode" id="cb65"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb92"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Create a matrix of drug combo x cell lines.</span></span>
 <span><span class="va">synergy_summaries</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html" class="external-link">as.data.frame</a></span><span class="op">(</span><span class="fu">data.table</span><span class="fu">::</span><span class="fu"><a href="https://Rdatatable.gitlab.io/data.table/reference/dcast.data.table.html" class="external-link">dcast</a></span><span class="op">(</span></span>
 <span>  <span class="va">mean_bliss_score</span>,</span>
@@ -2608,11 +2754,13 @@ treatment x sample matrix to the <code>sProfiles</code> argument, short
 for sensitivity profiles. For the purposes of this demonstration, we
 also subset the features we are computing over to 100 random genes,
 simply to save time.</p>
-<div class="sourceCode" id="cb66"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb93"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">gene_exp_sigs</span> <span class="op">&lt;-</span> <span class="fu">drugSensitivitySig</span><span class="op">(</span><span class="va">NCI_ALMANAC_2017</span>,</span>
 <span>  mDataType <span class="op">=</span> <span class="st">"rnaseq.comp"</span>,</span>
 <span>  sProfiles <span class="op">=</span> <span class="va">synergy_summaries</span>,</span>
 <span>  modeling.method <span class="op">=</span> <span class="st">"pearson"</span>,</span>
+<span>  drugs<span class="op">=</span><span class="st">"Vinblastine_+_Dasatinib"</span>,</span>
+<span>  inference.method <span class="op">=</span> <span class="st">"resampling"</span>,</span>
 <span>  features <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">rownames</a></span><span class="op">(</span><span class="fu">molecularProfiles</span><span class="op">(</span><span class="va">NCI_ALMANAC_2017</span>, <span class="st">"rnaseq.comp"</span><span class="op">)</span><span class="op">)</span>, <span class="fl">100</span><span class="op">)</span>,</span>
 <span>  nthread <span class="op">=</span> <span class="fl">1</span></span>
 <span><span class="op">)</span></span></code></pre></div>
@@ -2624,24 +2772,22 @@ intervals, p values, and FDR correction.</p>
 <p>One intersting (toy) example we find here is that expression of a
 couple of genes are significantly correlated with antagonism (negative
 Mean Bliss Score) for the combination of Vinblastine and Dasatinib.</p>
-<div class="sourceCode" id="cb68"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb95"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="op">(</span><span class="va">significant_vin_das</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span></span>
 <span>  <span class="va">gene_exp_sigs</span><span class="op">[</span>, <span class="st">"Vinblastine_+_Dasatinib"</span>, <span class="op">]</span>,</span>
 <span>  <span class="va">gene_exp_sigs</span><span class="op">[</span>, <span class="st">"Vinblastine_+_Dasatinib"</span>, <span class="st">"significant"</span><span class="op">]</span> <span class="op">==</span> <span class="fl">1</span></span>
 <span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">##           estimate  n df significant       pvalue      lower      upper</span></span>
-<span><span class="co">## NEUROD2 -0.5833826 42 30           1 0.0004574348 -0.7745218 -0.2946210</span></span>
-<span><span class="co">## MOBP    -0.6247997 42 30           1 0.0001320618 -0.7993452 -0.3530149</span></span>
-<span><span class="co">##                fdr</span></span>
-<span><span class="co">## NEUROD2 0.02287174</span></span>
-<span><span class="co">## MOBP    0.01320618</span></span></code></pre>
+<pre><code><span><span class="co">##             estimate  n df significant       pvalue      lower      upper</span></span>
+<span><span class="co">## LINC00977 -0.5773144 42 30           1 0.0002422726 -0.9273799 -0.1584183</span></span>
+<span><span class="co">##                  fdr</span></span>
+<span><span class="co">## LINC00977 0.02398498</span></span></code></pre>
 <p>To get a more global view of the results, we can also plot the
 resulting object, which by default will display as a volcano plot. Note
 below that the object returned is a normal ggplot2 plot, and therefore
 we can add other annotations to it, such as the gene labels. Below, we
 will add the labels for the two genes predicting antagonism between
 Vinblastine and Dasatinib to the plot.</p>
-<div class="sourceCode" id="cb70"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb97"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">gene_exp_sigs</span><span class="op">)</span></span>
 <span><span class="va">p</span> <span class="op">&lt;-</span> <span class="va">p</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html" class="external-link">geom_label</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">significant_vin_das</span><span class="op">[</span>, <span class="st">"estimate"</span><span class="op">]</span>,</span>
 <span>                        y <span class="op">=</span> <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log10</a></span><span class="op">(</span><span class="va">significant_vin_das</span><span class="op">[</span>, <span class="st">"pvalue"</span><span class="op">]</span><span class="op">)</span>,</span>
@@ -2654,7 +2800,7 @@ Vinblastine and Dasatinib to the plot.</p>
 <h2 id="further-resources">Further Resources<a class="anchor" aria-label="anchor" href="#further-resources"></a>
 </h2>
 <p>We hope that this workshop leaves you feeling familiar with both the
-data structures defined in <em><a href="https://bioconductor.org/packages/3.16/CoreGx" class="external-link">CoreGx</a></em> as
+data structures defined in <em><a href="https://bioconductor.org/packages/3.18/CoreGx" class="external-link">CoreGx</a></em> as
 well as the analysis of drug combination experiments. Over time, our
 group will be curating public drug combination studies and releasing
 <code>PharmacoSet</code> objects through our <em><a href="https://orcestra.ca" class="external-link">orcestra.ca</a></em> platform, which will be
@@ -2697,13 +2843,13 @@ Dose</span> an <span>Interaction Potency Model</span>.”</span>
 <div class="section level2">
 <h2 id="sessioninfo">SessionInfo<a class="anchor" aria-label="anchor" href="#sessioninfo"></a>
 </h2>
-<pre><code><span><span class="co">## R version 4.2.0 (2022-04-22)</span></span>
+<pre><code><span><span class="co">## R version 4.3.0 (2023-04-21)</span></span>
 <span><span class="co">## Platform: x86_64-pc-linux-gnu (64-bit)</span></span>
-<span><span class="co">## Running under: Ubuntu 20.04.4 LTS</span></span>
+<span><span class="co">## Running under: Ubuntu 22.04.2 LTS</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## Matrix products: default</span></span>
-<span><span class="co">## BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3</span></span>
-<span><span class="co">## LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3</span></span>
+<span><span class="co">## BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 </span></span>
+<span><span class="co">## LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## locale:</span></span>
 <span><span class="co">##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              </span></span>
@@ -2713,79 +2859,63 @@ Dose</span> an <span>Interaction Potency Model</span>.”</span>
 <span><span class="co">##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            </span></span>
 <span><span class="co">## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       </span></span>
 <span><span class="co">## </span></span>
+<span><span class="co">## time zone: Etc/UTC</span></span>
+<span><span class="co">## tzcode source: system (glibc)</span></span>
+<span><span class="co">## </span></span>
 <span><span class="co">## attached base packages:</span></span>
 <span><span class="co">## [1] stats4    stats     graphics  grDevices utils     datasets  methods  </span></span>
 <span><span class="co">## [8] base     </span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## other attached packages:</span></span>
-<span><span class="co">##  [1] ggplot2_3.3.6               data.table_1.14.2          </span></span>
-<span><span class="co">##  [3] PharmacoGx_3.1.5            CoreGx_2.1.7               </span></span>
-<span><span class="co">##  [5] SummarizedExperiment_1.27.1 Biobase_2.57.1             </span></span>
-<span><span class="co">##  [7] GenomicRanges_1.49.0        GenomeInfoDb_1.33.3        </span></span>
-<span><span class="co">##  [9] IRanges_2.31.0              S4Vectors_0.35.1           </span></span>
-<span><span class="co">## [11] MatrixGenerics_1.9.1        matrixStats_0.62.0         </span></span>
-<span><span class="co">## [13] BiocGenerics_0.43.1         pgxBioc2022Workshop_1.0.9  </span></span>
-<span><span class="co">## [15] BiocStyle_2.25.0           </span></span>
+<span><span class="co">##  [1] ggplot2_3.4.2                     data.table_1.14.8                </span></span>
+<span><span class="co">##  [3] PharmacoGx_3.3.1                  CoreGx_2.3.4                     </span></span>
+<span><span class="co">##  [5] MultiAssayExperiment_1.27.0       SummarizedExperiment_1.31.1      </span></span>
+<span><span class="co">##  [7] Biobase_2.61.0                    GenomicRanges_1.53.1             </span></span>
+<span><span class="co">##  [9] GenomeInfoDb_1.37.1               IRanges_2.35.1                   </span></span>
+<span><span class="co">## [11] S4Vectors_0.39.1                  BiocGenerics_0.47.0              </span></span>
+<span><span class="co">## [13] MatrixGenerics_1.13.0             matrixStats_0.63.0               </span></span>
+<span><span class="co">## [15] pgxDrugCombinationWorkshop_1.0.10 BiocStyle_2.29.0                 </span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## loaded via a namespace (and not attached):</span></span>
-<span><span class="co">##   [1] fgsea_1.23.0                colorspace_2.0-3           </span></span>
-<span><span class="co">##   [3] ellipsis_0.3.2              rprojroot_2.0.3            </span></span>
-<span><span class="co">##   [5] lsa_0.73.3                  XVector_0.37.0             </span></span>
-<span><span class="co">##   [7] fs_1.5.2                    farver_2.1.1               </span></span>
-<span><span class="co">##   [9] SnowballC_0.7.0             MultiAssayExperiment_1.23.4</span></span>
-<span><span class="co">##  [11] DT_0.23                     fansi_1.0.3                </span></span>
-<span><span class="co">##  [13] codetools_0.2-18            cachem_1.0.6               </span></span>
-<span><span class="co">##  [15] knitr_1.39                  jsonlite_1.8.0             </span></span>
-<span><span class="co">##  [17] magicaxis_2.2.14            cluster_2.1.3              </span></span>
-<span><span class="co">##  [19] shinydashboard_0.7.2        shiny_1.7.2                </span></span>
-<span><span class="co">##  [21] mapproj_1.2.8               BiocManager_1.30.18        </span></span>
-<span><span class="co">##  [23] compiler_4.2.0              backports_1.4.1            </span></span>
-<span><span class="co">##  [25] Matrix_1.4-1                fastmap_1.1.0              </span></span>
-<span><span class="co">##  [27] bench_1.1.2                 limma_3.53.5               </span></span>
-<span><span class="co">##  [29] cli_3.3.0                   later_1.3.0                </span></span>
-<span><span class="co">##  [31] visNetwork_2.1.0            htmltools_0.5.3            </span></span>
-<span><span class="co">##  [33] tools_4.2.0                 igraph_1.3.4               </span></span>
-<span><span class="co">##  [35] gtable_0.3.0                glue_1.6.2                 </span></span>
-<span><span class="co">##  [37] GenomeInfoDbData_1.2.8      reshape2_1.4.4             </span></span>
-<span><span class="co">##  [39] RANN_2.6.1                  dplyr_1.0.9                </span></span>
-<span><span class="co">##  [41] maps_3.4.0                  fastmatch_1.1-3            </span></span>
-<span><span class="co">##  [43] Rcpp_1.0.9                  slam_0.1-50                </span></span>
-<span><span class="co">##  [45] jquerylib_0.1.4             pkgdown_2.0.6              </span></span>
-<span><span class="co">##  [47] vctrs_0.4.1                 BumpyMatrix_1.5.0          </span></span>
-<span><span class="co">##  [49] xfun_0.31                   stringr_1.4.0              </span></span>
-<span><span class="co">##  [51] mime_0.12                   lifecycle_1.0.1            </span></span>
-<span><span class="co">##  [53] gtools_3.9.3                MASS_7.3-57                </span></span>
-<span><span class="co">##  [55] zlibbioc_1.43.0             scales_1.2.0               </span></span>
-<span><span class="co">##  [57] ragg_1.2.2                  promises_1.2.0.1           </span></span>
-<span><span class="co">##  [59] relations_0.6-12            parallel_4.2.0             </span></span>
-<span><span class="co">##  [61] RColorBrewer_1.1-3          sets_1.0-21                </span></span>
-<span><span class="co">##  [63] yaml_2.3.5                  memoise_2.0.1              </span></span>
-<span><span class="co">##  [65] gridExtra_2.3               downloader_0.4             </span></span>
-<span><span class="co">##  [67] sass_0.4.2                  stringi_1.7.8              </span></span>
-<span><span class="co">##  [69] highr_0.9                   NISTunits_1.0.1            </span></span>
-<span><span class="co">##  [71] desc_1.4.1                  plotrix_3.8-2              </span></span>
-<span><span class="co">##  [73] checkmate_2.1.0             caTools_1.18.2             </span></span>
-<span><span class="co">##  [75] boot_1.3-28                 BiocParallel_1.31.12       </span></span>
-<span><span class="co">##  [77] rlang_1.0.4                 pkgconfig_2.0.3            </span></span>
-<span><span class="co">##  [79] systemfonts_1.0.4           bitops_1.0-7               </span></span>
-<span><span class="co">##  [81] pracma_2.3.8                evaluate_0.15              </span></span>
-<span><span class="co">##  [83] lattice_0.20-45             purrr_0.3.4                </span></span>
-<span><span class="co">##  [85] labeling_0.4.2              htmlwidgets_1.5.4          </span></span>
-<span><span class="co">##  [87] tidyselect_1.1.2            plyr_1.8.7                 </span></span>
-<span><span class="co">##  [89] magrittr_2.0.3              bookdown_0.27              </span></span>
-<span><span class="co">##  [91] R6_2.5.1                    gplots_3.1.3               </span></span>
-<span><span class="co">##  [93] generics_0.1.3              sm_2.2-5.7.1               </span></span>
-<span><span class="co">##  [95] DelayedArray_0.23.1         withr_2.5.0                </span></span>
-<span><span class="co">##  [97] pillar_1.8.0                RCurl_1.98-1.8             </span></span>
-<span><span class="co">##  [99] tibble_3.1.8                crayon_1.5.1               </span></span>
-<span><span class="co">## [101] KernSmooth_2.23-20          utf8_1.2.2                 </span></span>
-<span><span class="co">## [103] rmarkdown_2.14              grid_4.2.0                 </span></span>
-<span><span class="co">## [105] marray_1.75.0               piano_2.13.0               </span></span>
-<span><span class="co">## [107] digest_0.6.29               xtable_1.8-4               </span></span>
-<span><span class="co">## [109] httpuv_1.6.5                textshaping_0.3.6          </span></span>
-<span><span class="co">## [111] celestial_1.4.6             coop_0.6-3                 </span></span>
-<span><span class="co">## [113] munsell_0.5.0               bslib_0.4.0                </span></span>
-<span><span class="co">## [115] shinyjs_2.1.0</span></span></code></pre>
+<span><span class="co">##   [1] RColorBrewer_1.1-3      jsonlite_1.8.4          magrittr_2.0.3         </span></span>
+<span><span class="co">##   [4] farver_2.1.1            rmarkdown_2.21          fs_1.6.2               </span></span>
+<span><span class="co">##   [7] zlibbioc_1.47.0         ragg_1.2.5              vctrs_0.6.2            </span></span>
+<span><span class="co">##  [10] memoise_2.0.1           magicaxis_2.2.14        RCurl_1.98-1.12        </span></span>
+<span><span class="co">##  [13] htmltools_0.5.5         S4Arrays_1.1.2          BiocBaseUtils_1.3.0    </span></span>
+<span><span class="co">##  [16] plotrix_3.8-2           SparseArray_1.1.2       sass_0.4.6             </span></span>
+<span><span class="co">##  [19] pracma_2.4.2            KernSmooth_2.23-21      bslib_0.4.2            </span></span>
+<span><span class="co">##  [22] htmlwidgets_1.6.2       desc_1.4.2              plyr_1.8.8             </span></span>
+<span><span class="co">##  [25] cachem_1.0.8            igraph_1.4.2            mime_0.12              </span></span>
+<span><span class="co">##  [28] lifecycle_1.0.3         piano_2.17.0            pkgconfig_2.0.3        </span></span>
+<span><span class="co">##  [31] Matrix_1.5-4            R6_2.5.1                fastmap_1.1.1          </span></span>
+<span><span class="co">##  [34] GenomeInfoDbData_1.2.10 shiny_1.7.4             digest_0.6.31          </span></span>
+<span><span class="co">##  [37] colorspace_2.1-0        rprojroot_2.0.3         textshaping_0.3.6      </span></span>
+<span><span class="co">##  [40] SnowballC_0.7.1         labeling_0.4.2          fansi_1.0.4            </span></span>
+<span><span class="co">##  [43] coop_0.6-3              compiler_4.3.0          withr_2.5.0            </span></span>
+<span><span class="co">##  [46] downloader_0.4          marray_1.79.0           backports_1.4.1        </span></span>
+<span><span class="co">##  [49] BiocParallel_1.35.1     bench_1.1.3             highr_0.10             </span></span>
+<span><span class="co">##  [52] gplots_3.1.3            maps_3.4.1              MASS_7.3-60            </span></span>
+<span><span class="co">##  [55] DelayedArray_0.27.2     gtools_3.9.4            caTools_1.18.2         </span></span>
+<span><span class="co">##  [58] tools_4.3.0             NISTunits_1.0.1         httpuv_1.6.10          </span></span>
+<span><span class="co">##  [61] relations_0.6-13        glue_1.6.2              promises_1.2.0.1       </span></span>
+<span><span class="co">##  [64] grid_4.3.0              checkmate_2.2.0         cluster_2.1.4          </span></span>
+<span><span class="co">##  [67] reshape2_1.4.4          fgsea_1.27.0            generics_0.1.3         </span></span>
+<span><span class="co">##  [70] gtable_0.3.3            sm_2.2-5.7.1            utf8_1.2.3             </span></span>
+<span><span class="co">##  [73] XVector_0.41.1          RANN_2.6.1              pillar_1.9.0           </span></span>
+<span><span class="co">##  [76] stringr_1.5.0           limma_3.57.1            BumpyMatrix_1.9.0      </span></span>
+<span><span class="co">##  [79] later_1.3.1             dplyr_1.1.2             lattice_0.21-8         </span></span>
+<span><span class="co">##  [82] tidyselect_1.2.0        knitr_1.42              bookdown_0.34          </span></span>
+<span><span class="co">##  [85] xfun_0.39               shinydashboard_0.7.2    DT_0.27                </span></span>
+<span><span class="co">##  [88] visNetwork_2.1.2        stringi_1.7.12          yaml_2.3.7             </span></span>
+<span><span class="co">##  [91] boot_1.3-28.1           evaluate_0.21           codetools_0.2-19       </span></span>
+<span><span class="co">##  [94] lsa_0.73.3              tibble_3.2.1            BiocManager_1.30.20    </span></span>
+<span><span class="co">##  [97] cli_3.6.1               xtable_1.8-4            systemfonts_1.0.4      </span></span>
+<span><span class="co">## [100] munsell_0.5.0           jquerylib_0.1.4         Rcpp_1.0.10            </span></span>
+<span><span class="co">## [103] mapproj_1.2.11          parallel_4.3.0          sets_1.0-24            </span></span>
+<span><span class="co">## [106] ellipsis_0.3.2          pkgdown_2.0.7           bitops_1.0-7           </span></span>
+<span><span class="co">## [109] slam_0.1-50             celestial_1.4.6         scales_1.2.1           </span></span>
+<span><span class="co">## [112] purrr_1.0.1             crayon_1.5.2            rlang_1.1.1            </span></span>
+<span><span class="co">## [115] cowplot_1.1.1           fastmatch_1.1-3         shinyjs_2.1.0</span></span></code></pre>
 </div>
   </div>
 
@@ -2806,7 +2936,7 @@ Dose</span> an <span>Interaction Potency Model</span>.”</span>
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>

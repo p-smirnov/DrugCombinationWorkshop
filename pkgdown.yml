@@ -1,9 +1,9 @@
-pandoc: 2.17.1.1
-pkgdown: 2.0.6
+pandoc: 2.19.2
+pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   PGxWorkshop: PGxWorkshop.html
-last_built: 2022-08-05T23:50Z
+last_built: 2023-05-09T13:44Z
 urls:
   reference: https://bhklab.github.io/bioc2022Workshop/reference
   article: https://bhklab.github.io/bioc2022Workshop/articles
