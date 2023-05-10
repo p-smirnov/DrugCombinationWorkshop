@@ -1,4 +1,4 @@
-url: https://bhklab.github.io/bioc2022Workshop
+url: http://psmirnov.com/DrugCombinationWorkshop/
 
 template:
   params:
@@ -6,11 +6,11 @@ template:
     #ganalytics: UA-99999999-9
 
 home:
-  title: "pgxBioc2022Workshop"
+  title: "pgxDrugCombinationWorkshop"
   type: inverse
 
 
 navbar:
   right:
    - icon: fa-github
-     href: https://bhklab.github.io/bioc2022Workshop
+     href: https://github.com/p-smirnov/DrugCombinationWorkshop
